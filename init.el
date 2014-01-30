@@ -21,6 +21,7 @@
   '(better-defaults
     clojure-mode
     clojure-test-mode
+    find-file-in-project
     paredit
     markdown-mode
     smex))
@@ -28,6 +29,16 @@
 (dolist (p dependencies)
   (when (not (package-installed-p p))
     (package-install p)))
+
+(mapc 'load (directory-files (concat user-emacs-directory user-login-name)
+                             t "^[^#].*el$"))
+
+(setq smex-save-file (concat user-emacs-directory ".smex-items"))
+(smex-initialize)
+
+(defalias 'yes-or-no-p 'y-or-no-p)
+
+(column-number-mode t)
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
