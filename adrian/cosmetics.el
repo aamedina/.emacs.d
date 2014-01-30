@@ -1,8 +1,8 @@
-(eval-after-load 'whitespace
-  '(diminish 'whitespace-mode))
-
 (eval-after-load 'paredit
   '(diminish 'paredit-mode))
+
+(eval-after-load 'diminish
+  '(diminish 'auto-fill-function))
 
 (defun zb ()
   (interactive)
