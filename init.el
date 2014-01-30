@@ -35,9 +35,11 @@
     markdown-mode
     smex
     diminish
+    js2-mode
     skewer-mode
     less-css-mode
-    skewer-less))
+    skewer-less
+    ido-hacks))
 
 (dolist (p dependencies)
   (when (not (package-installed-p p))
@@ -49,6 +51,11 @@
 (setq smex-save-file (concat user-emacs-directory ".smex-items"))
 (smex-initialize)
 
+(require 'ido-hacks)
+(ido-hacks-mode)
+
+(global-set-key (kbd "M-x") 'smex)
+
 (defalias 'yes-or-no-p 'y-or-n-p)
 
 (column-number-mode t)
@@ -57,5 +64,10 @@
 
 (add-to-list 'auto-mode-alist '("\\.markdown$" . markdown-mode))
 (add-to-list 'auto-mode-alist '("\\.less$" . less-css-mode))
+
+(add-hook 'js2-mode-hook 'skewer-mode)
+(add-hook 'css-mode-hook 'skewer-css-mode)
+(add-hook 'less-css-mode-hook 'skewer-css-mode)
+(add-hook 'html-mode-hook 'skewer-html-mode)
 
 (zb)
