@@ -38,3 +38,23 @@
       cider-repl-print-length 1000)
 
 (autopair-global-mode)
+
+(add-hook 'cider-mode-hook 'cider-turn-on-eldoc-mode)
+
+(setq-default js2-global-externs '("module" "require" "buster" "sinon" "assert" "refute" "setTimeout" "clearTimeout" "setInterval" "clearInterval" "location" "__dirname" "console" "JSON" "goog"))
+
+(defun js2-tab-properly ()
+  (interactive)
+  (let ((yas-fallback-behavior 'return-nil))
+    (unless (yas-expand)
+      (indent-for-tab-command)
+      (if (looking-back "^\s*")
+          (back-to-indentation)))))
+
+(require 'js2-mode)
+(define-key js2-mode-map (kbd "TAB") 'js2-tab-properly)
+
+(add-to-list 'load-path (expand-file-name "~/.emacs.d/tern/emacs/"))
+(autoload 'tern-mode "tern.el" nil t)
+(add-hook 'js2-mode-hook (lambda () (tern-mode t)))
+
