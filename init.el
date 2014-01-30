@@ -35,7 +35,10 @@
     skewer-mode
     less-css-mode
     skewer-less
-    ido-hacks))
+    ido-hacks
+    htmlize
+    yasnippet
+    visual-regexp-steroids))
 
 (dolist (p dependencies)
   (when (not (package-installed-p p))
@@ -60,10 +63,17 @@
 
 (add-to-list 'auto-mode-alist '("\\.markdown$" . markdown-mode))
 (add-to-list 'auto-mode-alist '("\\.less$" . less-css-mode))
+(add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
 
-(add-hook 'js2-mode-hook 'skewer-mode)
-(add-hook 'css-mode-hook 'skewer-css-mode)
+(require 'skewer-setup)
+(skewer-setup)
 (add-hook 'less-css-mode-hook 'skewer-css-mode)
-(add-hook 'html-mode-hook 'skewer-html-mode)
+
+(define-key global-map (kbd "C-c r") 'vr/replace)
+(define-key global-map (kbd "M-%") 'vr/query-replace)
+
+(define-key esc-map (kbd "C-r") 'vr/isearch-backward)
+(define-key esc-map (kbd "C-s") 'vr/isearch-forward)
+
 
 (zb)
