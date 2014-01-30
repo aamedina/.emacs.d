@@ -23,6 +23,7 @@
     clojure-test-mode
     find-file-in-project
     paredit
+    magit
     markdown-mode
     smex))
 
