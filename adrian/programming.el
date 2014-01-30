@@ -36,3 +36,5 @@
 (setq nrepl-hide-special-buffers t
       cider-popup-stacktraces nil
       cider-repl-print-length 1000)
+
+(autopair-global-mode)

@@ -3,6 +3,13 @@
 ;; inspired by Technomancy's emacs dotfiles
 ;; https://github.com/technomancy/dotfiles/blob/master/.emacs.d
 
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(custom-safe-themes (quote ("9370aeac615012366188359cb05011aea721c73e1cb194798bc18576025cabeb" default))))
+
 (require 'cl)
 
 (setq ido-use-virtual-buffers t
@@ -19,6 +26,7 @@
 
 (defvar dependencies
   '(better-defaults
+    autopair
     clojure-mode
     clojure-test-mode
     find-file-in-project
@@ -26,7 +34,10 @@
     magit
     markdown-mode
     smex
-    diminish))
+    diminish
+    skewer-mode
+    less-css-mode
+    skewer-less))
 
 (dolist (p dependencies)
   (when (not (package-installed-p p))
@@ -42,17 +53,9 @@
 
 (column-number-mode t)
 
-(zb)
+(setq-default ispell-program-name "aspell")
 
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(custom-safe-themes (quote ("9370aeac615012366188359cb05011aea721c73e1cb194798bc18576025cabeb" default))))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )
+(add-to-list 'auto-mode-alist '("\\.markdown$" . markdown-mode))
+(add-to-list 'auto-mode-alist '("\\.less$" . less-css-mode))
+
+(zb)

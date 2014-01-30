@@ -1,6 +1,9 @@
 (eval-after-load 'paredit
   '(diminish 'paredit-mode))
 
+(eval-after-load 'autopair
+  '(diminish 'autopair-mode))
+
 (eval-after-load 'diminish
   '(diminish 'auto-fill-function))
 
