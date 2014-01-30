@@ -1,5 +1,8 @@
 ;; Copyright © 2014 Adrian Medina
 
+;; inspired by Technomancy's emacs dotfiles
+;; https://github.com/technomancy/dotfiles/blob/master/.emacs.d
+
 (require 'cl)
 
 (setq ido-use-virtual-buffers t
@@ -7,11 +10,24 @@
 
 (require 'package)
 (add-to-list 'package-archives
-	     '("melpa" . "http://melpa.milkbox.net/packages/"))
+	     '("melpa" . "http://melpa.milkbox.net/packages/")
+	     '("marmalade" . "http://marmalade-repo.org/packages/"))
 (package-initialize)
 
 (when (null package-archive-contents)
   (package-refresh-contents))
+
+(defvar dependencies
+  '(better-defaults
+    clojure-mode
+    clojure-test-mode
+    paredit
+    markdown-mode
+    smex))
+
+(dolist (p dependencies)
+  (when (not (package-installed-p p))
+    (package-install p)))
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
