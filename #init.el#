@@ -49,9 +49,6 @@
   (when (not (package-installed-p p))
     (package-install p)))
 
-(add-to-list 'load-path "~/.emacs.d/cider")
-(require 'cider)
-
 (mapc 'load (directory-files (concat user-emacs-directory user-login-name)
                              t "^[^#].*el$"))
 
@@ -81,7 +78,7 @@
 (define-key global-map (kbd "M-%") 'vr/query-replace)
 
 (define-key esc-map (kbd "C-r") 'vr/isearch-backward)
-(define-key esc-map (kbd "C-s") 'vr/isearch-forward)
+(define-key esc-map (kbd "C-s") 'vr/isearch-forward)≈
 
 (yas-global-mode 1)
 
