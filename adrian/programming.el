@@ -3,8 +3,36 @@
 (set-default 'c-basic-offset 2)
 
 (require 'auto-complete-config)
-(setq-default ac-dwim nil)
 (global-auto-complete-mode t)
+(setq-default ac-expand-on-auto-complete nil
+              ac-auto-start nil
+              ac-dwim nil)
+
+(setq tab-always-indent 'complete)
+(add-to-list 'completion-styles 'initials t)
+
+(setq c-tab-always-indent nil
+      c-insert-tab-function 'indent-for-tab-command)
+
+(defun auto-complete-at-point ()
+  (when (and (not (minibufferp))
+             (fboundp 'auto-complete-mode)
+             auto-complete-mode)
+    (auto-complete)))
+
+
+(defun set-auto-complete-as-completion-at-point-function ()
+  (setq completion-at-point-functions
+        (cons 'auto-complete-at-point
+              (remove 'auto-complete-at-point completion-at-point-functions))))
+
+(add-hook 'auto-complete-mode-hook
+          'set-auto-complete-as-completion-at-point-function)
+
+(add-hook 'cider-repl-mode-hook
+          'set-auto-complete-as-completion-at-point-function)
+(add-hook 'cider-mode-hook
+          'set-auto-complete-as-completion-at-point-function)
 
 (setq lisp-modes '(lisp-mode
                    emacs-lisp-mode

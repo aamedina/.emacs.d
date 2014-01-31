@@ -42,7 +42,8 @@
     htmlize
     yasnippet
     undo-tree
-    visual-regexp-steroids))
+    visual-regexp-steroids
+    slamhound))
 
 (dolist (p dependencies)
   (when (not (package-installed-p p))
