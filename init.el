@@ -20,14 +20,25 @@
 (when (null package-archive-contents)
   (package-refresh-contents))
 
+(defvar cider-dependencies 
+  '(clojure-mode
+    clojure-test-mode
+    dash
+    pkg-info))
+
+(dolist (p cider-dependencies)
+  (when (not (package-installed-p p))
+    (package-install p)))
+
+(add-to-list 'load-path "~/.emacs.d/cider")
+(require 'cider)
+
 (defvar dependencies
   '(better-defaults
     auto-complete
-    ac-nrepl
     ac-js2
+    ac-nrepl
     autopair
-    clojure-mode
-    clojure-test-mode
     find-file-in-project
     paredit
     magit
@@ -48,9 +59,6 @@
 (dolist (p dependencies)
   (when (not (package-installed-p p))
     (package-install p)))
-
-(add-to-list 'load-path "~/.emacs.d/cider")
-(require 'cider)
 
 (mapc 'load (directory-files (concat user-emacs-directory user-login-name)
                              t "^[^#].*el$"))
