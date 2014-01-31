@@ -22,6 +22,9 @@
 
 (defvar dependencies
   '(better-defaults
+    auto-complete
+    ac-nrepl
+    ac-js2
     autopair
     clojure-mode
     clojure-test-mode

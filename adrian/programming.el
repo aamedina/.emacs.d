@@ -2,6 +2,10 @@
 
 (set-default 'c-basic-offset 2)
 
+(require 'auto-complete-config)
+(setq-default ac-dwim nil)
+(global-auto-complete-mode t)
+
 (setq lisp-modes '(lisp-mode
                    emacs-lisp-mode
                    common-lisp-mode
@@ -58,3 +62,8 @@
 (autoload 'tern-mode "tern.el" nil t)
 (add-hook 'js2-mode-hook (lambda () (tern-mode t)))
 
+(require 'ac-nrepl)
+(add-hook 'cider-repl-mode-hook 'ac-nrepl-setup)
+(add-hook 'cider-mode-hook 'ac-nrepl-setup)
+(eval-after-load 'auto-complete
+  '(add-to-list 'ac-modes 'cider-repl-mode))
