@@ -1,0 +1,71 @@
+;; Object Config/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Config/"
+  :tables (list 
+   (semanticdb-table "llvm-config.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("LLVM_BINDIR" variable (:constant-flag t) nil [1219 1230])
+            ("LLVM_CONFIGTIME" variable (:constant-flag t) nil [1313 1328])
+            ("LLVM_DATADIR" variable (:constant-flag t) nil [1413 1425])
+            ("LLVM_DEFAULT_TARGET_TRIPLE" variable (:constant-flag t) nil [1534 1560])
+            ("LLVM_DOCSDIR" variable (:constant-flag t) nil [1645 1657])
+            ("LLVM_ENABLE_THREADS" variable (:constant-flag t) nil [1743 1762])
+            ("LLVM_ETCDIR" variable (:constant-flag t) nil [1820 1831])
+            ("LLVM_HAS_ATOMICS" variable (:constant-flag t) nil [1916 1932])
+            ("LLVM_HOST_TRIPLE" variable (:constant-flag t) nil [1987 2003])
+            ("LLVM_INCLUDEDIR" variable (:constant-flag t) nil [2088 2103])
+            ("LLVM_INFODIR" variable (:constant-flag t) nil [2195 2207])
+            ("LLVM_MANDIR" variable (:constant-flag t) nil [2294 2305])
+            ("LLVM_NATIVE_ARCH" variable (:constant-flag t) nil [2419 2435])
+            ("LLVM_NATIVE_ASMPARSER" variable (:constant-flag t) nil [2518 2539])
+            ("LLVM_NATIVE_ASMPRINTER" variable (:constant-flag t) nil [2646 2668])
+            ("LLVM_NATIVE_DISASSEMBLER" variable (:constant-flag t) nil [2778 2802])
+            ("LLVM_NATIVE_TARGET" variable (:constant-flag t) nil [2908 2926])
+            ("LLVM_NATIVE_TARGETINFO" variable (:constant-flag t) nil [3030 3052])
+            ("LLVM_NATIVE_TARGETMC" variable (:constant-flag t) nil [3159 3179])
+            ("LLVM_ON_UNIX" variable (:constant-flag t) nil [3256 3268])
+            ("LLVM_PREFIX" variable (:constant-flag t) nil [4307 4318])
+            ("LLVM_USE_INTEL_JITEVENTS" variable (:constant-flag t) nil [4423 4447])
+            ("LLVM_USE_OPROFILE" variable (:constant-flag t) nil [4516 4533])
+            ("LLVM_VERSION_MAJOR" variable (:constant-flag t) nil [4581 4599])
+            ("LLVM_VERSION_MINOR" variable (:constant-flag t) nil [4647 4665]))          
+    :file "llvm-config.h"
+    :pointmax 4676
+    :fsize 4675
+    :lastmodtime '(21262 27081 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("LLVM_DOCSDIR" . ((string "\"/usr/local/Cellar/llvm/3.4/share/doc/llvm\"" 1658 . 1701)))
+          ("LLVM_ENABLE_THREADS" . ((number "1" 1763 . 1764)))
+          ("LLVM_HOST_TRIPLE" . ((string "\"x86_64-apple-darwin13.1.0\"" 2004 . 2031)))
+          ("LLVM_INCLUDEDIR" . ((string "\"/usr/local/Cellar/llvm/3.4/include\"" 2104 . 2140)))
+          ("LLVM_INFODIR" . ((string "\"/usr/local/Cellar/llvm/3.4/info\"" 2208 . 2241)))
+          ("LLVM_NATIVE_ASMPRINTER" . ((symbol "LLVMInitializeX86AsmPrinter" 2669 . 2696)))
+          ("LLVM_ON_UNIX" . ((number "1" 3269 . 3270)))
+          ("LLVM_CONFIGTIME" . ((string "\"Wed Feb 26 17:17:37 EST 2014\"" 1329 . 1359)))
+          ("LLVM_NATIVE_TARGET" . ((symbol "LLVMInitializeX86Target" 2927 . 2950)))
+          ("LLVM_VERSION_MAJOR" . ((number "3" 4600 . 4601)))
+          ("LLVM_NATIVE_ARCH" . ((symbol "X86" 2436 . 2439)))
+          ("LLVM_DEFAULT_TARGET_TRIPLE" . ((string "\"x86_64-apple-darwin13.1.0\"" 1561 . 1588)))
+          ("LLVM_NATIVE_ASMPARSER" . ((symbol "LLVMInitializeX86AsmParser" 2540 . 2566)))
+          ("LLVM_NATIVE_TARGETMC" . ((symbol "LLVMInitializeX86TargetMC" 3180 . 3205)))
+          ("LLVM_ETCDIR" . ((string "\"/usr/local/Cellar/llvm/3.4/etc/llvm\"" 1832 . 1869)))
+          ("LLVM_MANDIR" . ((string "\"/usr/local/Cellar/llvm/3.4/man\"" 2306 . 2338)))
+          ("LLVM_NATIVE_DISASSEMBLER" . ((symbol "LLVMInitializeX86Disassembler" 2803 . 2832)))
+          ("LLVM_NATIVE_TARGETINFO" . ((symbol "LLVMInitializeX86TargetInfo" 3053 . 3080)))
+          ("LLVM_USE_INTEL_JITEVENTS" . ((number "0" 4448 . 4449)))
+          ("LLVM_VERSION_MINOR" . ((number "4" 4666 . 4667)))
+          ("LLVM_PREFIX" . ((string "\"/usr/local/Cellar/llvm/3.4\"" 4319 . 4347)))
+          ("LLVM_BINDIR" . ((string "\"/usr/local/Cellar/llvm/3.4/bin\"" 1231 . 1263)))
+          ("LLVM_USE_OPROFILE" . ((number "0" 4534 . 4535)))
+          ("LLVM_DATADIR" . ((string "\"/usr/local/Cellar/llvm/3.4/share/llvm\"" 1426 . 1465)))
+          ("LLVM_HAS_ATOMICS" . ((number "1" 1933 . 1934)))
+          )
+
+    )
+   )
+  :file "!usr!local!Cellar!llvm!3.4!include!llvm!Config!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

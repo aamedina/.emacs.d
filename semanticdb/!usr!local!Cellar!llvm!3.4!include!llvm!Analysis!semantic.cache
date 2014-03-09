@@ -1,0 +1,92 @@
+;; Object Analysis/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Analysis/"
+  :tables (list 
+   (semanticdb-table "Verifier.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("LLVM_ANALYSIS_VERIFIER_H" variable (:constant-flag t) nil [883 907])
+            ("string" include (:system-flag t) nil [909 926])
+            ("llvm" type
+               (:members 
+                  ( ("FunctionPass" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [946 965])
+                    ("Module" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [966 979])
+                    ("Function" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [980 995])
+                    ("VerifierFailureAction" type
+                       (:members 
+                          ( ("AbortProcessAction" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1361 1380])
+                            ("PrintMessageAction" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1436 1455])
+                            ("ReturnStatusAction" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1515 1578]))                          
+                        :type "enum")
+                        (reparse-symbol namespacesubparts) [1330 1579])
+                    ("createVerifierPass" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :arguments 
+                          ( ("action" variable (:type ("VerifierFailureAction" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1814 1844])
+                            ("" variable (:type ("AbortProcessAction" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1845 1885]))                          
+                        :type ("FunctionPass" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1778 1886])
+                    ("verifyModule" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("M" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Module" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2187 2203])
+                            ("action" variable (:type ("VerifierFailureAction" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2238 2268])
+                            ("" variable (:type ("AbortProcessAction" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2269 2288])
+                            ("ErrorInfo" variable
+                               (:pointer 1
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2311 2335]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [2166 2378])
+                    ("verifyFunction" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("F" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Function" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2493 2511])
+                            ("action" variable (:type ("VerifierFailureAction" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2548 2578])
+                            ("" variable (:type ("AbortProcessAction" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2579 2619]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [2470 2620]))                  
+                :type "namespace")
+                nil [928 2623]))          
+    :file "Verifier.h"
+    :pointmax 2654
+    :fsize 2653
+    :lastmodtime '(21262 27080 0 0)
+    :unmatched-syntax '((punctuation 2577 . 2578) (number 2336 . 2337) (punctuation 2334 . 2335) (punctuation 2267 . 2268) (punctuation 1843 . 1844))
+    :lexical-table 
+        '(("LLVM_ANALYSIS_VERIFIER_H")
+          )
+
+    )
+   )
+  :file "!usr!local!Cellar!llvm!3.4!include!llvm!Analysis!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

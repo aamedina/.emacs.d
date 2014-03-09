@@ -1,0 +1,30 @@
+;; Object scratch/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "scratch/"
+  :tables (list 
+   (semanticdb-table "sample.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("stdlib.h" include (:system-flag t) nil [20 39])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [50 59])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [60 73]))                  
+                :type "int")
+                nil [41 118]))          
+    :file "sample.cpp"
+    :pointmax 129
+    :fsize 128
+    :lastmodtime '(21262 57979 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!Users!adrian!workspace!objc!scratch!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

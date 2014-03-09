@@ -1,0 +1,151 @@
+;; Object include/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "include/"
+  :tables (list 
+   (semanticdb-table "city.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("CITY_HASH_H_" variable (:constant-flag t) nil [3296 3308])
+            ("stdlib.h" include (:system-flag t) nil [3310 3329])
+            ("stdint.h" include (:system-flag t) nil [3346 3365])
+            ("utility" include (:system-flag t) nil [3366 3384])
+            ("uint8" type
+               (:typedef ("uint8_t" type (:type "class") nil nil)
+                :superclasses "uint8_t"
+                :type "typedef")
+                nil [3386 3408])
+            ("uint32" type
+               (:typedef ("uint32_t" type (:type "class") nil nil)
+                :superclasses "uint32_t"
+                :type "typedef")
+                nil [3409 3433])
+            ("uint64" type
+               (:typedef ("uint64_t" type (:type "class") nil nil)
+                :superclasses "uint64_t"
+                :type "typedef")
+                nil [3434 3458])
+            ("uint128" type
+               (:typedef ("std::pair" type
+                     (:template-specifier 
+                        ( ("uint64" type nil nil nil)
+                          ("uint64" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :superclasses "std::pair"
+                :type "typedef")
+                nil [3459 3501])
+            ("Uint128Low64" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("x" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("uint128" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3530 3547]))                  
+                :type ("uint64" type (:type "class") nil nil))
+                nil [3503 3567])
+            ("Uint128High64" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("x" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("uint128" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3596 3613]))                  
+                :type ("uint64" type (:type "class") nil nil))
+                nil [3568 3634])
+            ("CityHash64" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3689 3705])
+                    ("len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3706 3717]))                  
+                :type ("uint64" type (:type "class") nil nil))
+                nil [3671 3718])
+            ("CityHash64WithSeed" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3848 3864])
+                    ("len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3865 3876])
+                    ("seed" variable (:type ("uint64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3877 3889]))                  
+                :type ("uint64" type (:type "class") nil nil))
+                nil [3822 3890])
+            ("CityHash64WithSeeds" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4018 4034])
+                    ("len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4035 4046])
+                    ("seed0" variable (:type ("uint64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4074 4087])
+                    ("seed1" variable (:type ("uint64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4088 4101]))                  
+                :type ("uint64" type (:type "class") nil nil))
+                nil [3991 4102])
+            ("CityHash128" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4159 4173])
+                    ("len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4174 4185]))                  
+                :type ("uint128" type (:type "class") nil nil))
+                nil [4139 4186])
+            ("CityHash128WithSeed" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4319 4333])
+                    ("len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4334 4345])
+                    ("seed" variable (:type ("uint128" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4346 4359]))                  
+                :type ("uint128" type (:type "class") nil nil))
+                nil [4291 4360])
+            ("CityHash32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4448 4464])
+                    ("len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4465 4476]))                  
+                :type ("uint32" type (:type "class") nil nil))
+                nil [4430 4477])
+            ("Hash128to64" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("x" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("uint128" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4614 4631]))                  
+                :type ("uint64" type (:type "class") nil nil))
+                nil [4588 4873]))          
+    :file "city.h"
+    :pointmax 4899
+    :fsize 4898
+    :lastmodtime '(21271 41234 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("CITY_HASH_H_")
+          )
+
+    )
+   )
+  :file "!usr!local!Cellar!cityhash!1.1.1!include!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

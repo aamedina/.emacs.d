@@ -1,0 +1,29 @@
+;; Object public/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "public/"
+  :tables (list 
+   (semanticdb-table "index.html"
+    :major-mode 'html-mode
+    :tags 
+        '( ("[if lt IE 7]>
+        <p class=\"browsehappy\">You are using an <strong>outdated" section nil nil [389 637])
+            ("[if lt IE 7]>
+        <p class=\"browsehappy\">You are using an <strong>outdated" section (:members 
+              ( ("upgrade your browser" anchor nil nil [756 759]))              ) nil [637 903])
+            ("goog.require(\"three.cljs.core\");" section nil nil [903 943])
+            ("goog.require(\"three.cljs.core\");" section nil nil [943 999])
+            ("goog.require(\"three.cljs.core\");" section nil nil [999 1047])
+            ("goog.require(\"three.cljs.core\");" section nil nil [1047 1086])
+            ("goog.require(\"three.cljs.core\");" section nil nil [1086 1140])
+            ("three.cljs.core._main();" section nil nil [1140 1200]))          
+    :file "index.html"
+    :pointmax 1200
+    :fsize 1199
+    :lastmodtime '(21270 5297 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!Users!adrian!workspace!cljs!three.cljs!resources!public!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

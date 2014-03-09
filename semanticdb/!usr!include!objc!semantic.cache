@@ -1,0 +1,1634 @@
+;; Object objc/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "objc/"
+  :tables (list 
+   (semanticdb-table "objc.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("_OBJC_OBJC_H_" variable (:constant-flag t) nil [1069 1082])
+            ("sys/types.h" include (:system-flag t) nil [1084 1106])
+            ("Availability.h" include (:system-flag t) nil [1133 1158])
+            ("objc/objc-api.h" include (:system-flag t) nil [1159 1185])
+            ("Class" type
+               (:typedef ("objc_class" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :pointer 1
+                :superclasses "objc_class"
+                :type "typedef")
+                nil [1268 1301])
+            ("objc_object" type
+               (:members 
+                  ( ("OBJC_ISA_AVAILABILITY" variable (:type ("isa" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1373 1400]))                  
+                :type "struct")
+                nil [1342 1403])
+            ("id" type
+               (:typedef ("objc_object" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :pointer 1
+                :superclasses "objc_object"
+                :type "typedef")
+                nil [1446 1477])
+            ("SEL" type
+               (:typedef ("objc_selector" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :pointer 1
+                :superclasses "objc_selector"
+                :type "typedef")
+                nil [1540 1574])
+            ("IMP" variable
+               (:functionpointer-flag t
+                :type "void")
+                nil [1677 1715])
+            ("OBJC_BOOL_DEFINED" variable (:constant-flag t) nil [1773 1790])
+            ("BOOL" type
+               (:typedef ("signed char")
+                :superclasses "signed char"
+                :type "typedef")
+                nil [1831 1856])
+            ("YES" variable (:constant-flag t) nil [2077 2080])
+            ("NO" variable (:constant-flag t) nil [2111 2113])
+            ("Nil" variable (:constant-flag t) nil [2230 2233])
+            ("nil" variable (:constant-flag t) nil [2349 2352])
+            ("__OSX_AVAILABLE_STARTING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("__MAC_10_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2899 2910])
+                    ("" variable (:type ("__IPHONE_2_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2911 2924]))                  
+                :type "int")
+                nil [2874 2925])
+            ("__OSX_AVAILABLE_STARTING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("__MAC_10_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3587 3598])
+                    ("" variable (:type ("__IPHONE_2_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3599 3612]))                  
+                :type "int")
+                nil [3562 3613])
+            ("__OSX_AVAILABLE_STARTING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("__MAC_10_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3860 3871])
+                    ("" variable (:type ("__IPHONE_2_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3872 3885]))                  
+                :type "int")
+                nil [3835 3886])
+            ("__OSX_AVAILABLE_STARTING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("__MAC_10_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4899 4910])
+                    ("" variable (:type ("__IPHONE_2_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4911 4924]))                  
+                :type "int")
+                nil [4874 4925])
+            ("__OSX_AVAILABLE_STARTING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("__MAC_10_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5309 5320])
+                    ("" variable (:type ("__IPHONE_2_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5321 5334]))                  
+                :type "int")
+                nil [5284 5335])
+            ("__OSX_AVAILABLE_STARTING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("__MAC_10_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6065 6076])
+                    ("" variable (:type ("__IPHONE_2_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6077 6090]))                  
+                :type "int")
+                nil [6040 6091])
+            ("objc_objectptr_t" type
+               (:typedef ("void")
+                :pointer 1
+                :superclasses "void"
+                :type "typedef")
+                nil [6221 6258])
+            ("objc_retainedObject" variable (:constant-flag t) nil [6532 6551])
+            ("objc_unretainedObject" variable (:constant-flag t) nil [6594 6615])
+            ("objc_unretainedPointer" variable (:constant-flag t) nil [6658 6680])
+            ("arith_t" type
+               (:typedef ("long")
+                :superclasses "long"
+                :type "typedef")
+                nil [6838 6859])
+            ("uarith_t" type
+               (:typedef ("unsigned long")
+                :superclasses "unsigned long"
+                :type "typedef")
+                nil [6864 6895])
+            ("ARITH_SHIFT" variable (:constant-flag t) nil [6907 6918])
+            ("STR" type
+               (:typedef ("char")
+                :pointer 1
+                :superclasses "char"
+                :type "typedef")
+                nil [7018 7036])
+            ("ISSELECTOR" variable (:constant-flag t) nil [7046 7056])
+            ("SELNAME" variable (:constant-flag t) nil [7088 7095])
+            ("SELUID" variable (:constant-flag t) nil [7126 7132])
+            ("NAMEOF" variable (:constant-flag t) nil [7162 7168])
+            ("IV" variable (:constant-flag t) nil [7211 7213]))          
+    :file "objc.h"
+    :pointmax 7292
+    :fsize 7293
+    :lastmodtime '(21222 57724 0 0)
+    :unmatched-syntax '((semantic-list 6018 . 6035) (symbol 6008 . 6018) (symbol 6004 . 6007) (symbol 5992 . 6003) (semantic-list 5270 . 5279) (symbol 5258 . 5270) (symbol 5253 . 5257) (symbol 5241 . 5252) (semantic-list 4861 . 4869) (symbol 4839 . 4861) (punctuation 4838 . 4839) (VOID 4833 . 4837) (symbol 4821 . 4832) (semantic-list 3822 . 3830) (symbol 3803 . 3822) (punctuation 3802 . 3803) (CHAR 3797 . 3801) (CONST 3791 . 3796) (symbol 3779 . 3790) (semantic-list 3540 . 3557) (symbol 3524 . 3540) (symbol 3520 . 3523) (symbol 3508 . 3519) (semantic-list 2860 . 2869) (symbol 2849 . 2860) (punctuation 2848 . 2849) (CHAR 2843 . 2847) (CONST 2837 . 2842) (symbol 2825 . 2836) (TYPEDEF 1669 . 1676) (symbol 1367 . 1372))
+    :lexical-table 
+        '(("OBJC_BOOL_DEFINED")
+          ("NO" . ((semantic-list "((BOOL)0)" 2127 . 2136)))
+          ("SELUID" (spp-arg-list ("str") 7132 . 7137) . ((symbol "sel_getUid" 7138 . 7148) (semantic-list "(str)" 7148 . 7153)))
+          ("objc_retainedObject" (spp-arg-list ("o") 6551 . 6554) . ((semantic-list "((id)(objc_objectptr_t)(o))" 6555 . 6582)))
+          ("NAMEOF" (spp-arg-list ("obj") 7168 . 7173) . ((symbol "object_getClassName" 7178 . 7197) (semantic-list "(obj)" 7197 . 7202)))
+          ("ARITH_SHIFT" . ((number "32" 6919 . 6921)))
+          ("IV" (spp-arg-list ("obj") 7213 . 7218) . ((symbol "object_getIndexedIvars" 7227 . 7249) (semantic-list "(obj)" 7249 . 7254)))
+          ("Nil" . ((symbol "__DARWIN_NULL" 2234 . 2247)))
+          ("objc_unretainedPointer" (spp-arg-list ("o") 6680 . 6683) . ((semantic-list "((objc_objectptr_t)(id)(o))" 6684 . 6711)))
+          ("nil" . ((symbol "__DARWIN_NULL" 2353 . 2366)))
+          ("SELNAME" (spp-arg-list ("sel") 7095 . 7100) . ((symbol "sel_getName" 7101 . 7112) (semantic-list "(sel)" 7112 . 7117)))
+          ("_OBJC_OBJC_H_")
+          ("YES" . ((semantic-list "((BOOL)1)" 2093 . 2102)))
+          ("objc_unretainedObject" (spp-arg-list ("o") 6615 . 6618) . ((semantic-list "((id)(objc_objectptr_t)(o))" 6619 . 6646)))
+          ("ISSELECTOR" (spp-arg-list ("sel") 7056 . 7061) . ((symbol "sel_isMapped" 7062 . 7074) (semantic-list "(sel)" 7074 . 7079)))
+          )
+
+    )
+   (semanticdb-table "objc-api.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("_OBJC_OBJC_API_H_" variable (:constant-flag t) nil [1055 1072])
+            ("Availability.h" include (:system-flag t) nil [1074 1099])
+            ("AvailabilityMacros.h" include (:system-flag t) nil [1100 1131])
+            ("TargetConditionals.h" include (:system-flag t) nil [1132 1163])
+            ("__has_feature" variable (:constant-flag t) nil [1198 1211])
+            ("__has_extension" variable (:constant-flag t) nil [1260 1275])
+            ("__has_attribute" variable (:constant-flag t) nil [1333 1348])
+            ("OBJC_API_VERSION" variable (:constant-flag t) nil [1671 1687])
+            ("OBJC_OLD_DISPATCH_PROTOTYPES" variable (:constant-flag t) nil [1907 1935])
+            ("OBJC_ISA_AVAILABILITY" variable (:constant-flag t) nil [2081 2102])
+            ("OBJC2_UNAVAILABLE" variable (:constant-flag t) nil [2404 2421])
+            ("OBJC_ARC_UNAVAILABLE" variable (:constant-flag t) nil [2949 2969])
+            ("OBJC_GC_UNAVAILABLE" variable (:constant-flag t) nil [3407 3426])
+            ("OBJC_EXTERN" variable (:constant-flag t) nil [3514 3525])
+            ("OBJC_VISIBLE" variable (:constant-flag t) nil [3842 3854])
+            ("OBJC_EXPORT" variable (:constant-flag t) nil [3950 3961])
+            ("OBJC_IMPORT" variable (:constant-flag t) nil [4033 4044])
+            ("OBJC_ROOT_CLASS" variable (:constant-flag t) nil [4218 4233])
+            ("__DARWIN_NULL" variable (:constant-flag t) nil [4282 4295])
+            ("OBJC_INLINE" variable (:constant-flag t) nil [4346 4357]))          
+    :file "objc-api.h"
+    :pointmax 4382
+    :fsize 4381
+    :lastmodtime '(21222 57724 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("OBJC_API_VERSION" . ((number "2" 1688 . 1689)))
+          ("__has_extension" . ((symbol "__has_feature" 1276 . 1289)))
+          ("OBJC_ISA_AVAILABILITY")
+          ("__has_feature" (spp-arg-list ("x") 1211 . 1214) . ((number "0" 1215 . 1216)))
+          ("OBJC_ROOT_CLASS")
+          ("OBJC_ARC_UNAVAILABLE")
+          ("OBJC_GC_UNAVAILABLE")
+          ("_OBJC_OBJC_API_H_")
+          ("OBJC_VISIBLE" . ((symbol "__attribute__" 3856 . 3869) (semantic-list "((visibility(\"default\")))" 3869 . 3894)))
+          ("__DARWIN_NULL" . ((symbol "NULL" 4296 . 4300)))
+          ("OBJC_EXTERN" . ((EXTERN "extern" 3526 . 3532) (string "\"C\"" 3533 . 3536)))
+          ("OBJC_INLINE" . ((symbol "__inline" 4358 . 4366)))
+          ("OBJC_EXPORT" . ((symbol "OBJC_EXTERN" 3963 . 3974) (symbol "OBJC_VISIBLE" 3975 . 3987)))
+          ("__has_attribute" (spp-arg-list ("x") 1348 . 1351) . ((number "0" 1352 . 1353)))
+          ("OBJC_OLD_DISPATCH_PROTOTYPES" . ((number "1" 1936 . 1937)))
+          ("OBJC_IMPORT" . ((EXTERN "extern" 4045 . 4051)))
+          ("OBJC2_UNAVAILABLE" . ((symbol "__OSX_AVAILABLE_BUT_DEPRECATED" 2422 . 2452) (semantic-list "(__MAC_10_5,__MAC_10_5, __IPHONE_2_0,__IPHONE_2_0)" 2452 . 2502)))
+          )
+
+    )
+   (semanticdb-table "runtime.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("_OBJC_RUNTIME_H" variable (:constant-flag t) nil [1010 1025])
+            ("objc/objc.h" include (:system-flag t) nil [1027 1049])
+            ("stdarg.h" include (:system-flag t) nil [1050 1069])
+            ("stdint.h" include (:system-flag t) nil [1070 1089])
+            ("stddef.h" include (:system-flag t) nil [1090 1109])
+            ("Availability.h" include (:system-flag t) nil [1110 1135])
+            ("TargetConditionals.h" include (:system-flag t) nil [1136 1167])
+            ("Method" type
+               (:typedef ("objc_method" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :pointer 1
+                :superclasses "objc_method"
+                :type "typedef")
+                nil [1324 1359])
+            ("Ivar" type
+               (:typedef ("objc_ivar" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :pointer 1
+                :superclasses "objc_ivar"
+                :type "typedef")
+                nil [1418 1449])
+            ("Category" type
+               (:typedef ("objc_category" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :pointer 1
+                :superclasses "objc_category"
+                :type "typedef")
+                nil [1498 1537])
+            ("objc_property_t" type
+               (:typedef ("objc_property" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :pointer 1
+                :superclasses "objc_property"
+                :type "typedef")
+                nil [1608 1654])
+            ("objc_class" type
+               (:members 
+                  ( ("OBJC_ISA_AVAILABILITY" variable (:type ("isa" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1686 1713])
+                    ("OBJC2_UNAVAILABLE" variable (:type ("super_class" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1740 1809])
+                    ("OBJC2_UNAVAILABLE" variable (:type ("name" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1826 1889])
+                    ("OBJC2_UNAVAILABLE" variable (:type ("version" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1899 1969])
+                    ("OBJC2_UNAVAILABLE" variable (:type ("info" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1979 2049])
+                    ("OBJC2_UNAVAILABLE" variable (:type ("instance_size" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2059 2129])
+                    ("OBJC2_UNAVAILABLE" variable (:type ("ivars" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2157 2209])
+                    ("OBJC2_UNAVAILABLE" variable (:type ("methodLists" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2240 2289])
+                    ("OBJC2_UNAVAILABLE" variable (:type ("cache" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2313 2369])
+                    ("OBJC2_UNAVAILABLE" variable (:type ("protocols" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2401 2449]))                  
+                :type "struct")
+                nil [1656 2478])
+            ("OBJC2_UNAVAILABLE" variable (:type ("objc_class" type
+                 (:prototype t
+                  :type "struct")
+                  nil nil)) nil [1656 2478])
+            ("Protocol" type
+               (:typedef ("objc_object" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :superclasses "objc_object"
+                :type "typedef")
+                nil [2578 2614])
+            ("objc_method_description" type
+               (:members 
+                  ( ("name" variable (:type ("SEL" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2678 2687])
+                    ("types" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [2734 2746]))                  
+                :type "struct")
+                nil [2644 2802])
+            ("objc_property_attribute_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("name" variable
+                             (:pointer 1
+                              :constant-flag t
+                              :type "char")
+                              (reparse-symbol classsubparts) [2858 2875])
+                          ("value" variable
+                             (:pointer 1
+                              :constant-flag t
+                              :type "char")
+                              (reparse-symbol classsubparts) [2924 2942]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [2837 3031])
+            ("OBJC_ARC_UNAVAILABLE" variable (:type "int") nil [3354 3375])
+            ("OBJC_ARC_UNAVAILABLE" variable (:type "int") nil [3591 3612])
+            ("__OSX_AVAILABLE_STARTING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("__MAC_10_5" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3887 3898])
+                    ("" variable (:type ("__IPHONE_2_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3899 3912]))                  
+                :type "int")
+                nil [3862 3913])
+            ("__OSX_AVAILABLE_STARTING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("__MAC_10_5" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4200 4211])
+                    ("" variable (:type ("__IPHONE_2_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4212 4225]))                  
+                :type "int")
+                nil [4175 4226])
+            ("__OSX_AVAILABLE_STARTING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("__MAC_10_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4473 4484])
+                    ("" variable (:type ("__IPHONE_2_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4485 4498]))                  
+                :type "int")
+                nil [4448 4499])
+            ("OBJC_ARC_UNAVAILABLE" variable (:type "int") nil [5542 5563])
+            ("__OSX_AVAILABLE_STARTING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("__MAC_10_5" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6132 6143])
+                    ("" variable (:type ("__IPHONE_2_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6144 6157]))                  
+                :type "int")
+                nil [6107 6158])
+            ("__OSX_AVAILABLE_STARTING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("__MAC_10_5" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6687 6698])
+                    ("" variable (:type ("__IPHONE_2_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6699 6712]))                  
+                :type "int")
+                nil [6662 6713])
+            ("OBJC_ARC_UNAVAILABLE" variable (:type "int") nil [7365 7386])
+            ("OBJC_ARC_UNAVAILABLE" variable (:type "int") nil [8072 8093])
+            ("__OSX_AVAILABLE_STARTING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("__MAC_10_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8891 8902])
+                    ("" variable (:type ("__IPHONE_2_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8903 8916]))                  
+                :type "int")
+                nil [8866 8917])
+            ("__OSX_AVAILABLE_STARTING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("__MAC_10_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9615 9626])
+                    ("" variable (:type ("__IPHONE_2_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9627 9640]))                  
+                :type "int")
+                nil [9590 9641])
+            ("__OSX_AVAILABLE_STARTING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("__MAC_10_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10255 10266])
+                    ("" variable (:type ("__IPHONE_2_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10267 10280]))                  
+                :type "int")
+                nil [10230 10281])
+            ("__OSX_AVAILABLE_STARTING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("__MAC_10_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10775 10786])
+                    ("" variable (:type ("__IPHONE_2_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10787 10800]))                  
+                :type "int")
+                nil [10750 10801])
+            ("__OSX_AVAILABLE_STARTING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("__MAC_10_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12162 12173])
+                    ("" variable (:type ("__IPHONE_2_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12174 12187]))                  
+                :type "int")
+                nil [12137 12188])
+            ("__OSX_AVAILABLE_STARTING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("__MAC_10_7" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12622 12633])
+                    ("" variable (:type ("__IPHONE_3_1" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12634 12647]))                  
+                :type "int")
+                nil [12597 12648])
+            ("__OSX_AVAILABLE_STARTING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("__MAC_10_5" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12913 12924])
+                    ("" variable (:type ("__IPHONE_2_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12925 12938]))                  
+                :type "int")
+                nil [12888 12939])
+            ("__OSX_AVAILABLE_STARTING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("__MAC_10_5" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13259 13270])
+                    ("" variable (:type ("__IPHONE_2_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13271 13284]))                  
+                :type "int")
+                nil [13234 13285])
+            ("__OSX_AVAILABLE_STARTING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("__MAC_10_5" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13660 13671])
+                    ("" variable (:type ("__IPHONE_2_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13672 13685]))                  
+                :type "int")
+                nil [13635 13686])
+            ("__OSX_AVAILABLE_BUT_DEPRECATED" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("__MAC_10_5" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14042 14053])
+                    ("" variable (:type ("__MAC_10_5" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14053 14064])
+                    ("" variable (:type ("__IPHONE_2_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14065 14078])
+                    ("" variable (:type ("__IPHONE_2_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14078 14091]))                  
+                :type "int")
+                nil [14011 14092])
+            ("__OSX_AVAILABLE_STARTING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("__MAC_10_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14468 14479])
+                    ("" variable (:type ("__IPHONE_2_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14480 14493]))                  
+                :type "int")
+                nil [14443 14494])
+            ("__OSX_AVAILABLE_STARTING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("__MAC_10_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15465 15476])
+                    ("" variable (:type ("__IPHONE_2_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15477 15490]))                  
+                :type "int")
+                nil [15440 15491])
+            ("__OSX_AVAILABLE_STARTING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("__MAC_10_5" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15760 15771])
+                    ("" variable (:type ("__IPHONE_2_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15772 15785]))                  
+                :type "int")
+                nil [15735 15786])
+            ("__OSX_AVAILABLE_STARTING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("__MAC_10_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16248 16259])
+                    ("" variable (:type ("__IPHONE_2_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16260 16273]))                  
+                :type "int")
+                nil [16223 16274])
+            ("__OSX_AVAILABLE_STARTING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("__MAC_10_5" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16726 16737])
+                    ("" variable (:type ("__IPHONE_2_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16738 16751]))                  
+                :type "int")
+                nil [16701 16752])
+            ("__OSX_AVAILABLE_STARTING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("__MAC_10_5" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17483 17494])
+                    ("" variable (:type ("__IPHONE_2_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17495 17508]))                  
+                :type "int")
+                nil [17458 17509])
+            ("__OSX_AVAILABLE_STARTING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("__MAC_10_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18159 18170])
+                    ("" variable (:type ("__IPHONE_2_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18171 18184]))                  
+                :type "int")
+                nil [18134 18185])
+            ("__OSX_AVAILABLE_STARTING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("__MAC_10_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19008 19019])
+                    ("" variable (:type ("__IPHONE_2_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19020 19033]))                  
+                :type "int")
+                nil [18983 19034])
+            ("__OSX_AVAILABLE_STARTING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("__MAC_10_5" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19916 19927])
+                    ("" variable (:type ("__IPHONE_2_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19928 19941]))                  
+                :type "int")
+                nil [19891 19942])
+            ("__OSX_AVAILABLE_STARTING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("__MAC_10_5" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20407 20418])
+                    ("" variable (:type ("__IPHONE_2_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20419 20432]))                  
+                :type "int")
+                nil [20382 20433])
+            ("__OSX_AVAILABLE_STARTING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("__MAC_10_5" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20953 20964])
+                    ("" variable (:type ("__IPHONE_2_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20965 20978]))                  
+                :type "int")
+                nil [20928 20979])
+            ("__OSX_AVAILABLE_STARTING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("__MAC_10_5" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21978 21989])
+                    ("" variable (:type ("__IPHONE_2_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21990 22003]))                  
+                :type "int")
+                nil [21953 22004])
+            ("__OSX_AVAILABLE_STARTING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("__MAC_10_5" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22447 22458])
+                    ("" variable (:type ("__IPHONE_2_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22459 22472]))                  
+                :type "int")
+                nil [22422 22473])
+            ("__OSX_AVAILABLE_STARTING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("__MAC_10_5" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23215 23226])
+                    ("" variable (:type ("__IPHONE_2_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23227 23240]))                  
+                :type "int")
+                nil [23190 23241])
+            ("__OSX_AVAILABLE_STARTING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("__MAC_10_5" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23711 23722])
+                    ("" variable (:type ("__IPHONE_2_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23723 23736]))                  
+                :type "int")
+                nil [23686 23737])
+            ("__OSX_AVAILABLE_STARTING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("__MAC_10_5" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24504 24515])
+                    ("" variable (:type ("__IPHONE_2_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24516 24529]))                  
+                :type "int")
+                nil [24479 24530])
+            ("__OSX_AVAILABLE_STARTING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("__MAC_10_5" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24798 24809])
+                    ("" variable (:type ("__IPHONE_2_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24810 24823]))                  
+                :type "int")
+                nil [24773 24824])
+            ("__OSX_AVAILABLE_STARTING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("__MAC_10_5" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25115 25126])
+                    ("" variable (:type ("__IPHONE_2_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25127 25140]))                  
+                :type "int")
+                nil [25090 25141])
+            ("__OSX_AVAILABLE_STARTING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("__MAC_10_5" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [26110 26121])
+                    ("" variable (:type ("__IPHONE_2_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [26122 26135]))                  
+                :type "int")
+                nil [26085 26136])
+            ("__OSX_AVAILABLE_STARTING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("__MAC_10_5" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [27399 27410])
+                    ("" variable (:type ("__IPHONE_2_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [27411 27424]))                  
+                :type "int")
+                nil [27374 27425])
+            ("__OSX_AVAILABLE_STARTING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("__MAC_10_5" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28381 28392])
+                    ("" variable (:type ("__IPHONE_2_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28393 28406]))                  
+                :type "int")
+                nil [28356 28407])
+            ("__OSX_AVAILABLE_STARTING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("__MAC_10_5" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28776 28787])
+                    ("" variable (:type ("__IPHONE_2_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28788 28801]))                  
+                :type "int")
+                nil [28751 28802])
+            ("__OSX_AVAILABLE_STARTING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("__MAC_10_7" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [29348 29359])
+                    ("" variable (:type ("__IPHONE_4_3" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [29360 29373]))                  
+                :type "int")
+                nil [29323 29374])
+            ("__OSX_AVAILABLE_STARTING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("__MAC_10_7" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [29795 29806])
+                    ("" variable (:type ("__IPHONE_4_3" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [29807 29820]))                  
+                :type "int")
+                nil [29770 29821])
+            ("__OSX_AVAILABLE_STARTING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("__MAC_10_5" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [30071 30082])
+                    ("" variable (:type ("__IPHONE_2_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [30083 30096]))                  
+                :type "int")
+                nil [30046 30097])
+            ("__OSX_AVAILABLE_STARTING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("__MAC_10_5" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [30363 30374])
+                    ("" variable (:type ("__IPHONE_2_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [30375 30388]))                  
+                :type "int")
+                nil [30338 30389])
+            ("OBJC_ARC_UNAVAILABLE" variable (:type "int") nil [30806 30827])
+            ("OBJC_ARC_UNAVAILABLE" variable (:type "int") nil [31066 31087])
+            ("OBJC_ARC_UNAVAILABLE" variable (:type "int") nil [31687 31708])
+            ("OBJC_ARC_UNAVAILABLE" variable (:type "int") nil [32378 32399])
+            ("OBJC_ARC_UNAVAILABLE" variable (:type "int") nil [32883 32904])
+            ("__OSX_AVAILABLE_STARTING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("__MAC_10_5" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [34135 34146])
+                    ("" variable (:type ("__IPHONE_2_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [34147 34160]))                  
+                :type "int")
+                nil [34110 34161])
+            ("__OSX_AVAILABLE_STARTING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("__MAC_10_5" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [34377 34388])
+                    ("" variable (:type ("__IPHONE_2_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [34389 34402]))                  
+                :type "int")
+                nil [34352 34403])
+            ("__OSX_AVAILABLE_STARTING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("__MAC_10_5" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [34632 34643])
+                    ("" variable (:type ("__IPHONE_2_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [34644 34657]))                  
+                :type "int")
+                nil [34607 34658])
+            ("__OSX_AVAILABLE_STARTING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("__MAC_10_5" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [34985 34996])
+                    ("" variable (:type ("__IPHONE_2_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [34997 35010]))                  
+                :type "int")
+                nil [34960 35011])
+            ("__OSX_AVAILABLE_STARTING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("__MAC_10_5" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [35329 35340])
+                    ("" variable (:type ("__IPHONE_2_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [35341 35354]))                  
+                :type "int")
+                nil [35304 35355])
+            ("__OSX_AVAILABLE_STARTING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("__MAC_10_5" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [35577 35588])
+                    ("" variable (:type ("__IPHONE_2_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [35589 35602]))                  
+                :type "int")
+                nil [35552 35603])
+            ("__OSX_AVAILABLE_STARTING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("__MAC_10_5" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [35865 35876])
+                    ("" variable (:type ("__IPHONE_2_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [35877 35890]))                  
+                :type "int")
+                nil [35840 35891])
+            ("__OSX_AVAILABLE_STARTING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("__MAC_10_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [36228 36239])
+                    ("" variable (:type ("__IPHONE_2_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [36240 36253]))                  
+                :type "int")
+                nil [36203 36254])
+            ("__OSX_AVAILABLE_STARTING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("__MAC_10_5" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [36535 36546])
+                    ("" variable (:type ("__IPHONE_2_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [36547 36560]))                  
+                :type "int")
+                nil [36510 36561])
+            ("__OSX_AVAILABLE_STARTING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("__MAC_10_5" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [37018 37029])
+                    ("" variable (:type ("__IPHONE_2_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [37030 37043]))                  
+                :type "int")
+                nil [36993 37044])
+            ("__OSX_AVAILABLE_STARTING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("__MAC_10_5" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [37572 37583])
+                    ("" variable (:type ("__IPHONE_2_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [37584 37597]))                  
+                :type "int")
+                nil [37547 37598])
+            ("__OSX_AVAILABLE_STARTING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("__MAC_10_5" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [38390 38401])
+                    ("" variable (:type ("__IPHONE_2_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [38402 38415]))                  
+                :type "int")
+                nil [38365 38416])
+            ("__OSX_AVAILABLE_STARTING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("__MAC_10_5" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [38524 38535])
+                    ("" variable (:type ("__IPHONE_2_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [38536 38549]))                  
+                :type "int")
+                nil [38499 38550])
+            ("__OSX_AVAILABLE_STARTING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("__MAC_10_5" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [38867 38878])
+                    ("" variable (:type ("__IPHONE_2_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [38879 38892]))                  
+                :type "int")
+                nil [38842 38893])
+            ("__OSX_AVAILABLE_STARTING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("__MAC_10_5" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [39412 39423])
+                    ("" variable (:type ("__IPHONE_2_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [39424 39437]))                  
+                :type "int")
+                nil [39387 39438])
+            ("__OSX_AVAILABLE_STARTING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("__MAC_10_5" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [39742 39753])
+                    ("" variable (:type ("__IPHONE_2_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [39754 39767]))                  
+                :type "int")
+                nil [39717 39768])
+            ("__OSX_AVAILABLE_STARTING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("__MAC_10_5" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [40149 40160])
+                    ("" variable (:type ("__IPHONE_2_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [40161 40174]))                  
+                :type "int")
+                nil [40124 40175])
+            ("__OSX_AVAILABLE_STARTING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("__MAC_10_5" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [40607 40618])
+                    ("" variable (:type ("__IPHONE_2_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [40619 40632]))                  
+                :type "int")
+                nil [40582 40633])
+            ("__OSX_AVAILABLE_STARTING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("__MAC_10_5" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [40930 40941])
+                    ("" variable (:type ("__IPHONE_2_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [40942 40955]))                  
+                :type "int")
+                nil [40905 40956])
+            ("__OSX_AVAILABLE_STARTING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("__MAC_10_5" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [41342 41353])
+                    ("" variable (:type ("__IPHONE_2_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [41354 41367]))                  
+                :type "int")
+                nil [41317 41368])
+            ("__OSX_AVAILABLE_STARTING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("__MAC_10_7" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [41803 41814])
+                    ("" variable (:type ("__IPHONE_4_3" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [41815 41828]))                  
+                :type "int")
+                nil [41778 41829])
+            ("__OSX_AVAILABLE_STARTING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("__MAC_10_7" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [42304 42315])
+                    ("" variable (:type ("__IPHONE_4_3" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [42316 42329]))                  
+                :type "int")
+                nil [42279 42330])
+            ("__OSX_AVAILABLE_STARTING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("__MAC_10_5" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [42688 42699])
+                    ("" variable (:type ("__IPHONE_2_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [42700 42713]))                  
+                :type "int")
+                nil [42663 42714])
+            ("__OSX_AVAILABLE_STARTING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("__MAC_10_5" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [43240 43251])
+                    ("" variable (:type ("__IPHONE_2_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [43252 43265]))                  
+                :type "int")
+                nil [43215 43266])
+            ("__OSX_AVAILABLE_STARTING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("__MAC_10_5" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [43905 43916])
+                    ("" variable (:type ("__IPHONE_2_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [43917 43930]))                  
+                :type "int")
+                nil [43880 43931])
+            ("__OSX_AVAILABLE_STARTING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("__MAC_10_5" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [44251 44262])
+                    ("" variable (:type ("__IPHONE_2_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [44263 44276]))                  
+                :type "int")
+                nil [44226 44277])
+            ("__OSX_AVAILABLE_STARTING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("__MAC_10_5" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [44495 44506])
+                    ("" variable (:type ("__IPHONE_2_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [44507 44520]))                  
+                :type "int")
+                nil [44470 44521])
+            ("__OSX_AVAILABLE_STARTING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("__MAC_10_5" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [45436 45447])
+                    ("" variable (:type ("__IPHONE_2_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [45448 45461]))                  
+                :type "int")
+                nil [45411 45462])
+            ("__OSX_AVAILABLE_STARTING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("__MAC_10_5" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [46706 46717])
+                    ("" variable (:type ("__IPHONE_2_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [46718 46731]))                  
+                :type "int")
+                nil [46681 46732])
+            ("__OSX_AVAILABLE_STARTING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("__MAC_10_5" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [47413 47424])
+                    ("" variable (:type ("__IPHONE_2_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [47425 47438]))                  
+                :type "int")
+                nil [47388 47439])
+            ("__OSX_AVAILABLE_STARTING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("__MAC_10_5" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [48168 48179])
+                    ("" variable (:type ("__IPHONE_2_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [48180 48193]))                  
+                :type "int")
+                nil [48143 48194])
+            ("__OSX_AVAILABLE_STARTING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("__MAC_10_5" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [48793 48804])
+                    ("" variable (:type ("__IPHONE_2_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [48805 48818]))                  
+                :type "int")
+                nil [48768 48819])
+            ("__OSX_AVAILABLE_STARTING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("__MAC_10_7" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [49241 49252])
+                    ("" variable (:type ("__IPHONE_4_3" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [49253 49266]))                  
+                :type "int")
+                nil [49216 49267])
+            ("__OSX_AVAILABLE_STARTING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("__MAC_10_7" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [49547 49558])
+                    ("" variable (:type ("__IPHONE_4_3" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [49559 49572]))                  
+                :type "int")
+                nil [49522 49573])
+            ("__OSX_AVAILABLE_STARTING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("__MAC_10_7" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [50132 50143])
+                    ("" variable (:type ("__IPHONE_4_3" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [50144 50157]))                  
+                :type "int")
+                nil [50107 50158])
+            ("__OSX_AVAILABLE_STARTING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("__MAC_10_7" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [50634 50645])
+                    ("" variable (:type ("__IPHONE_4_3" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [50646 50659]))                  
+                :type "int")
+                nil [50609 50660])
+            ("__OSX_AVAILABLE_STARTING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("__MAC_10_7" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [51506 51517])
+                    ("" variable (:type ("__IPHONE_4_3" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [51518 51531]))                  
+                :type "int")
+                nil [51481 51532])
+            ("__OSX_AVAILABLE_STARTING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("__MAC_10_5" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [51890 51901])
+                    ("" variable (:type ("__IPHONE_2_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [51902 51915]))                  
+                :type "int")
+                nil [51865 51916])
+            ("__OSX_AVAILABLE_STARTING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("__MAC_10_5" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [52188 52199])
+                    ("" variable (:type ("__IPHONE_2_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [52200 52213]))                  
+                :type "int")
+                nil [52163 52214])
+            ("__OSX_AVAILABLE_STARTING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("__MAC_10_5" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [52656 52667])
+                    ("" variable (:type ("__IPHONE_2_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [52668 52681]))                  
+                :type "int")
+                nil [52631 52682])
+            ("__OSX_AVAILABLE_STARTING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("__MAC_10_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [53022 53033])
+                    ("" variable (:type ("__IPHONE_2_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [53034 53047]))                  
+                :type "int")
+                nil [52997 53048])
+            ("__OSX_AVAILABLE_STARTING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("__MAC_10_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [53778 53789])
+                    ("" variable (:type ("__IPHONE_2_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [53790 53803]))                  
+                :type "int")
+                nil [53753 53804])
+            ("__OSX_AVAILABLE_STARTING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("__MAC_10_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [54466 54477])
+                    ("" variable (:type ("__IPHONE_2_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [54478 54491]))                  
+                :type "int")
+                nil [54441 54492])
+            ("__OSX_AVAILABLE_STARTING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("__MAC_10_5" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [54873 54884])
+                    ("" variable (:type ("__IPHONE_2_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [54885 54898]))                  
+                :type "int")
+                nil [54848 54899])
+            ("__OSX_AVAILABLE_STARTING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("__MAC_10_5" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [55338 55349])
+                    ("" variable (:type ("__IPHONE_2_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [55350 55363]))                  
+                :type "int")
+                nil [55313 55364])
+            ("__OSX_AVAILABLE_STARTING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("__MAC_10_5" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [55586 55597])
+                    ("" variable (:type ("__IPHONE_2_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [55598 55611]))                  
+                :type "int")
+                nil [55561 55612])
+            ("__OSX_AVAILABLE_STARTING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("__MAC_10_5" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [55949 55960])
+                    ("" variable (:type ("__IPHONE_2_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [55961 55974]))                  
+                :type "int")
+                nil [55924 55975])
+            ("__OSX_AVAILABLE_STARTING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("__MAC_10_7" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [56501 56512])
+                    ("" variable (:type ("__IPHONE_4_3" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [56513 56526]))                  
+                :type "int")
+                nil [56476 56527])
+            ("__OSX_AVAILABLE_STARTING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("__MAC_10_7" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [56804 56815])
+                    ("" variable (:type ("__IPHONE_4_3" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [56816 56829]))                  
+                :type "int")
+                nil [56779 56830])
+            ("__OSX_AVAILABLE_STARTING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("__MAC_10_7" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [57305 57316])
+                    ("" variable (:type ("__IPHONE_4_3" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [57317 57330]))                  
+                :type "int")
+                nil [57280 57331])
+            ("__OSX_AVAILABLE_STARTING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("__MAC_10_7" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [57824 57835])
+                    ("" variable (:type ("__IPHONE_5_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [57836 57849]))                  
+                :type "int")
+                nil [57799 57850])
+            ("__OSX_AVAILABLE_STARTING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("__MAC_10_7" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [58269 58280])
+                    ("" variable (:type ("__IPHONE_5_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [58281 58294]))                  
+                :type "int")
+                nil [58244 58295])
+            ("" type
+               (:members 
+                  ( ("OBJC_ASSOCIATION_ASSIGN" variable
+                       (:constant-flag t
+                        :default-value (58471 58472)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [58445 58472])
+                    ("OBJC_ASSOCIATION_RETAIN_NONATOMIC" variable
+                       (:constant-flag t
+                        :default-value (58585 58586)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [58549 58586])
+                    ("OBJC_ASSOCIATION_COPY_NONATOMIC" variable
+                       (:constant-flag t
+                        :default-value (58778 58779)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [58744 58779])
+                    ("OBJC_ASSOCIATION_RETAIN" variable
+                       (:constant-flag t
+                        :default-value (58958 58963)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [58932 58963])
+                    ("OBJC_ASSOCIATION_COPY" variable
+                       (:constant-flag t
+                        :default-value (59146 59151)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [59122 59151]))                  
+                :type "enum")
+                nil [58434 59303])
+            ("objc_AssociationPolicy" type
+               (:typedef ("uintptr_t" type (:type "class") nil nil)
+                :superclasses "uintptr_t"
+                :type "typedef")
+                nil [59357 59398])
+            ("__OSX_AVAILABLE_STARTING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("__MAC_10_6" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [60032 60043])
+                    ("" variable (:type ("__IPHONE_3_1" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [60044 60057]))                  
+                :type "int")
+                nil [60007 60058])
+            ("__OSX_AVAILABLE_STARTING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("__MAC_10_6" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [60446 60457])
+                    ("" variable (:type ("__IPHONE_3_1" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [60458 60471]))                  
+                :type "int")
+                nil [60421 60472])
+            ("__OSX_AVAILABLE_STARTING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("__MAC_10_6" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [61142 61153])
+                    ("" variable (:type ("__IPHONE_3_1" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [61154 61167]))                  
+                :type "int")
+                nil [61117 61168])
+            ("_C_ID" variable (:constant-flag t) nil [61179 61184])
+            ("_C_CLASS" variable (:constant-flag t) nil [61203 61211])
+            ("_C_SEL" variable (:constant-flag t) nil [61227 61233])
+            ("_C_CHR" variable (:constant-flag t) nil [61251 61257])
+            ("_C_UCHR" variable (:constant-flag t) nil [61275 61282])
+            ("_C_SHT" variable (:constant-flag t) nil [61299 61305])
+            ("_C_USHT" variable (:constant-flag t) nil [61323 61330])
+            ("_C_INT" variable (:constant-flag t) nil [61347 61353])
+            ("_C_UINT" variable (:constant-flag t) nil [61371 61378])
+            ("_C_LNG" variable (:constant-flag t) nil [61395 61401])
+            ("_C_ULNG" variable (:constant-flag t) nil [61419 61426])
+            ("_C_LNG_LNG" variable (:constant-flag t) nil [61443 61453])
+            ("_C_ULNG_LNG" variable (:constant-flag t) nil [61467 61478])
+            ("_C_FLT" variable (:constant-flag t) nil [61491 61497])
+            ("_C_DBL" variable (:constant-flag t) nil [61515 61521])
+            ("_C_BFLD" variable (:constant-flag t) nil [61539 61546])
+            ("_C_BOOL" variable (:constant-flag t) nil [61563 61570])
+            ("_C_VOID" variable (:constant-flag t) nil [61587 61594])
+            ("_C_UNDEF" variable (:constant-flag t) nil [61611 61619])
+            ("_C_PTR" variable (:constant-flag t) nil [61635 61641])
+            ("_C_CHARPTR" variable (:constant-flag t) nil [61659 61669])
+            ("_C_ATOM" variable (:constant-flag t) nil [61683 61690])
+            ("_C_ARY_B" variable (:constant-flag t) nil [61707 61715])
+            ("_C_ARY_E" variable (:constant-flag t) nil [61731 61739])
+            ("_C_UNION_B" variable (:constant-flag t) nil [61755 61765])
+            ("_C_UNION_E" variable (:constant-flag t) nil [61779 61789])
+            ("_C_STRUCT_B" variable (:constant-flag t) nil [61803 61814])
+            ("_C_STRUCT_E" variable (:constant-flag t) nil [61827 61838])
+            ("_C_VECTOR" variable (:constant-flag t) nil [61851 61860])
+            ("_C_CONST" variable (:constant-flag t) nil [61875 61883])
+            ("CLS_GETINFO" variable (:constant-flag t) nil [61939 61950])
+            ("CLS_SETINFO" variable (:constant-flag t) nil [62007 62018])
+            ("CLS_CLASS" variable (:constant-flag t) nil [62105 62114])
+            ("CLS_META" variable (:constant-flag t) nil [62165 62173])
+            ("CLS_INITIALIZED" variable (:constant-flag t) nil [62245 62260])
+            ("CLS_POSING" variable (:constant-flag t) nil [62300 62310])
+            ("CLS_MAPPED" variable (:constant-flag t) nil [62346 62356])
+            ("CLS_FLUSH_CACHE" variable (:constant-flag t) nil [62445 62460])
+            ("CLS_GROW_CACHE" variable (:constant-flag t) nil [62520 62534])
+            ("CLS_NEED_BIND" variable (:constant-flag t) nil [62567 62580])
+            ("CLS_METHOD_ARRAY" variable (:constant-flag t) nil [62644 62660])
+            ("CLS_JAVA_HYBRID" variable (:constant-flag t) nil [62738 62753])
+            ("CLS_JAVA_CLASS" variable (:constant-flag t) nil [62776 62790])
+            ("CLS_INITIALIZING" variable (:constant-flag t) nil [62841 62857])
+            ("CLS_FROM_BUNDLE" variable (:constant-flag t) nil [62899 62914])
+            ("CLS_HAS_CXX_STRUCTORS" variable (:constant-flag t) nil [62958 62979])
+            ("CLS_NO_METHOD_ARRAY" variable (:constant-flag t) nil [63024 63043])
+            ("CLS_HAS_LOAD_METHOD" variable (:constant-flag t) nil [63087 63106])
+            ("CLS_CONSTRUCTING" variable (:constant-flag t) nil [63156 63172])
+            ("CLS_EXT" variable (:constant-flag t) nil [63242 63249])
+            ("objc_method_description_list" type
+               (:members 
+                  ( ("count" variable (:type "int") (reparse-symbol classsubparts) [63322 63332])
+                    ("list" variable
+                       (:dereference 1
+                        :type ("objc_method_description" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [63341 63380]))                  
+                :type "struct")
+                nil [63276 63383])
+            ("objc_protocol_list" type
+               (:members 
+                  ( ("next" variable
+                       (:pointer 1
+                        :type ("objc_protocol_list" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [63418 63450])
+                    ("count" variable (:type "long") (reparse-symbol classsubparts) [63455 63466])
+                    ("list" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type ("Protocol" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [63471 63489]))                  
+                :type "struct")
+                nil [63386 63492])
+            ("objc_category" type
+               (:members 
+                  ( ("OBJC2_UNAVAILABLE" variable (:type ("category_name" type (:type "class") nil nil)) (reparse-symbol classsubparts) [63528 63597])
+                    ("OBJC2_UNAVAILABLE" variable (:type ("class_name" type (:type "class") nil nil)) (reparse-symbol classsubparts) [63608 63677])
+                    ("OBJC2_UNAVAILABLE" variable (:type ("instance_methods" type (:type "class") nil nil)) (reparse-symbol classsubparts) [63707 63757])
+                    ("OBJC2_UNAVAILABLE" variable (:type ("class_methods" type (:type "class") nil nil)) (reparse-symbol classsubparts) [63787 63837])
+                    ("OBJC2_UNAVAILABLE" variable (:type ("protocols" type (:type "class") nil nil)) (reparse-symbol classsubparts) [63869 63917]))                  
+                :type "struct")
+                nil [63495 63997])
+            ("OBJC2_UNAVAILABLE" variable (:type ("objc_category" type
+                 (:prototype t
+                  :type "struct")
+                  nil nil)) nil [63495 63997])
+            ("objc_ivar" type
+               (:members 
+                  ( ("OBJC2_UNAVAILABLE" variable (:type ("ivar_name" type (:type "class") nil nil)) (reparse-symbol classsubparts) [64029 64098])
+                    ("OBJC2_UNAVAILABLE" variable (:type ("ivar_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [64109 64178])
+                    ("OBJC2_UNAVAILABLE" variable (:type ("ivar_offset" type (:type "class") nil nil)) (reparse-symbol classsubparts) [64187 64258])
+                    ("OBJC2_UNAVAILABLE" variable (:type ("space" type (:type "class") nil nil)) (reparse-symbol classsubparts) [64283 64354]))                  
+                :type "struct")
+                nil [64000 64441])
+            ("OBJC2_UNAVAILABLE" variable (:type ("objc_ivar" type
+                 (:prototype t
+                  :type "struct")
+                  nil nil)) nil [64000 64441])
+            ("objc_ivar_list" type
+               (:members 
+                  ( ("OBJC2_UNAVAILABLE" variable (:type ("ivar_count" type (:type "class") nil nil)) (reparse-symbol classsubparts) [64475 64546])
+                    ("OBJC2_UNAVAILABLE" variable (:type ("space" type (:type "class") nil nil)) (reparse-symbol classsubparts) [64571 64642])
+                    ("OBJC2_UNAVAILABLE" variable (:type "int") (reparse-symbol classsubparts) [64747 64765]))                  
+                :type "struct")
+                nil [64443 64845])
+            ("OBJC2_UNAVAILABLE" variable (:type ("objc_ivar_list" type
+                 (:prototype t
+                  :type "struct")
+                  nil nil)) nil [64443 64845])
+            ("objc_method" type
+               (:members 
+                  ( ("OBJC2_UNAVAILABLE" variable (:type ("method_name" type (:type "class") nil nil)) (reparse-symbol classsubparts) [64877 64948])
+                    ("OBJC2_UNAVAILABLE" variable (:type ("method_types" type (:type "class") nil nil)) (reparse-symbol classsubparts) [64959 65028])
+                    ("OBJC2_UNAVAILABLE" variable (:type ("method_imp" type (:type "class") nil nil)) (reparse-symbol classsubparts) [65037 65108]))                  
+                :type "struct")
+                nil [64848 65188])
+            ("OBJC2_UNAVAILABLE" variable (:type ("objc_method" type
+                 (:prototype t
+                  :type "struct")
+                  nil nil)) nil [64848 65188])
+            ("objc_method_list" type
+               (:members 
+                  ( ("OBJC2_UNAVAILABLE" variable (:type ("obsolete" type (:type "class") nil nil)) (reparse-symbol classsubparts) [65245 65295])
+                    ("OBJC2_UNAVAILABLE" variable (:type ("method_count" type (:type "class") nil nil)) (reparse-symbol classsubparts) [65305 65376])
+                    ("OBJC2_UNAVAILABLE" variable (:type ("space" type (:type "class") nil nil)) (reparse-symbol classsubparts) [65401 65472])
+                    ("OBJC2_UNAVAILABLE" variable (:type "int") (reparse-symbol classsubparts) [65577 65595]))                  
+                :type "struct")
+                nil [65190 65675])
+            ("OBJC2_UNAVAILABLE" variable (:type ("objc_method_list" type
+                 (:prototype t
+                  :type "struct")
+                  nil nil)) nil [65190 65675])
+            ("OBJC2_UNAVAILABLE" variable (:type ((((1) "Symtab")) type (:superclasses ("objc_symtab" type (:prototype t :type "struct") nil nil) :type "typedef") nil nil)) nil [65678 65757])
+            ("objc_symtab" type
+               (:members 
+                  ( ("OBJC2_UNAVAILABLE" variable (:type ("sel_ref_cnt" type (:type "class") nil nil)) (reparse-symbol classsubparts) [65798 65859])
+                    ("OBJC2_UNAVAILABLE" variable (:type ("refs" type (:type "class") nil nil)) (reparse-symbol classsubparts) [65869 65939])
+                    ("OBJC2_UNAVAILABLE" variable (:type ("cls_def_cnt" type (:type "class") nil nil)) (reparse-symbol classsubparts) [65959 66019])
+                    ("OBJC2_UNAVAILABLE" variable (:type ("cat_def_cnt" type (:type "class") nil nil)) (reparse-symbol classsubparts) [66039 66099])
+                    ("OBJC2_UNAVAILABLE" variable (:type "int") (reparse-symbol classsubparts) [66161 66179]))                  
+                :type "struct")
+                nil [65759 66259])
+            ("OBJC2_UNAVAILABLE" variable (:type ("objc_symtab" type
+                 (:prototype t
+                  :type "struct")
+                  nil nil)) nil [65759 66259])
+            ("OBJC2_UNAVAILABLE" variable (:type ((((1) "Cache")) type (:superclasses ("objc_cache" type (:prototype t :type "struct") nil nil) :type "typedef") nil nil)) nil [66262 66341])
+            ("CACHE_BUCKET_NAME" variable (:constant-flag t) nil [66351 66368])
+            ("CACHE_BUCKET_IMP" variable (:constant-flag t) nil [66400 66416])
+            ("CACHE_BUCKET_VALID" variable (:constant-flag t) nil [66448 66466])
+            ("CACHE_HASH" variable (:constant-flag t) nil [66568 66578])
+            ("objc_cache" type
+               (:members 
+                  ( ("OBJC2_UNAVAILABLE" variable (:type ("mask" type (:type "class") nil nil)) (reparse-symbol classsubparts) [66683 66745])
+                    ("OBJC2_UNAVAILABLE" variable (:type ("occupied" type (:type "class") nil nil)) (reparse-symbol classsubparts) [66763 66825])
+                    ("OBJC2_UNAVAILABLE" variable (:type "int") (reparse-symbol classsubparts) [66887 66905]))                  
+                :type "struct")
+                nil [66646 66908])
+            ("OBJC2_UNAVAILABLE" variable (:type ((((1) "Module")) type (:superclasses ("objc_module" type (:prototype t :type "struct") nil nil) :type "typedef") nil nil)) nil [66911 66990])
+            ("objc_module" type
+               (:members 
+                  ( ("OBJC2_UNAVAILABLE" variable (:type ("version" type (:type "class") nil nil)) (reparse-symbol classsubparts) [67031 67092])
+                    ("OBJC2_UNAVAILABLE" variable (:type ("size" type (:type "class") nil nil)) (reparse-symbol classsubparts) [67111 67172])
+                    ("OBJC2_UNAVAILABLE" variable (:type ("name" type (:type "class") nil nil)) (reparse-symbol classsubparts) [67189 67252])
+                    ("OBJC2_UNAVAILABLE" variable (:type ("symtab" type (:type "class") nil nil)) (reparse-symbol classsubparts) [67264 67332]))                  
+                :type "struct")
+                nil [66992 67412])
+            ("OBJC2_UNAVAILABLE" variable (:type ("objc_module" type
+                 (:prototype t
+                  :type "struct")
+                  nil nil)) nil [66992 67412])
+            ("__OSX_AVAILABLE_BUT_DEPRECATED" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("__MAC_10_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [67573 67584])
+                    ("" variable (:type ("__MAC_10_5" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [67584 67595])
+                    ("" variable (:type ("__IPHONE_2_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [67596 67609])
+                    ("" variable (:type ("__IPHONE_2_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [67609 67622]))                  
+                :type "int")
+                nil [67542 67623])
+            ("__OSX_AVAILABLE_BUT_DEPRECATED" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("__MAC_10_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [67719 67730])
+                    ("" variable (:type ("__MAC_10_5" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [67730 67741])
+                    ("" variable (:type ("__IPHONE_2_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [67742 67755])
+                    ("" variable (:type ("__IPHONE_2_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [67755 67768]))                  
+                :type "int")
+                nil [67688 67769])
+            ("__OSX_AVAILABLE_BUT_DEPRECATED" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("__MAC_10_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [67853 67864])
+                    ("" variable (:type ("__MAC_10_5" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [67864 67875])
+                    ("" variable (:type ("__IPHONE_2_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [67876 67889])
+                    ("" variable (:type ("__IPHONE_2_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [67889 67902]))                  
+                :type "int")
+                nil [67822 67903])
+            ("OBJC_ARC_UNAVAILABLE" variable (:type "int") nil [68065 68086])
+            ("OBJC2_UNAVAILABLE" variable (:type "int") nil [68148 68166])
+            ("OBJC2_UNAVAILABLE" variable (:type "int") nil [68242 68260])
+            ("OBSOLETE_OBJC_GETCLASSES" variable (:constant-flag t) nil [68270 68294])
+            ("OBJC2_UNAVAILABLE" variable (:type "int") nil [68358 68376])
+            ("OBJC2_UNAVAILABLE" variable (:type "int") nil [68438 68456])
+            ("OBJC2_UNAVAILABLE" variable (:type "int") nil [68518 68536])
+            ("OBJC2_UNAVAILABLE" variable (:type "int") nil [68598 68616])
+            ("OBJC_ARC_UNAVAILABLE" variable (:type "int") nil [68784 68805])
+            ("OBJC2_UNAVAILABLE" variable (:type "int") nil [68875 68893])
+            ("OBJC2_UNAVAILABLE" variable (:type "int") nil [68965 68983])
+            ("OBJC2_UNAVAILABLE" variable (:type "int") nil [69048 69066])
+            ("OBJC2_UNAVAILABLE" variable (:type "int") nil [69131 69149])
+            ("OBJC2_UNAVAILABLE" variable (:type "int") nil [69212 69230])
+            ("OBJC2_UNAVAILABLE" variable (:type "int") nil [69339 69357])
+            ("OBJC2_UNAVAILABLE" variable (:type "int") nil [69420 69438])
+            ("OBJC_NEXT_METHOD_LIST" variable (:constant-flag t) nil [69447 69468])
+            ("OBJC2_UNAVAILABLE" variable (:type "int") nil [69545 69563])
+            ("id" function
+               (:arguments 
+                  ( ("" variable (:type ("_alloc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [69740 69747]))                  
+                :type ("OBJC_EXPORT" type (:type "class") nil nil))
+                nil [69723 69762])
+            ("OBJC2_UNAVAILABLE" variable (:type "int") nil [69784 69802])
+            ("id" function
+               (:arguments 
+                  ( ("" variable (:type ("_copy" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [69820 69826]))                  
+                :type ("OBJC_EXPORT" type (:type "class") nil nil))
+                nil [69803 69838])
+            ("OBJC2_UNAVAILABLE" variable (:type "int") nil [69864 69882])
+            ("id" function
+               (:arguments 
+                  ( ("" variable (:type ("_realloc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [69900 69909]))                  
+                :type ("OBJC_EXPORT" type (:type "class") nil nil))
+                nil [69883 69921])
+            ("OBJC2_UNAVAILABLE" variable (:type "int") nil [69944 69962])
+            ("id" function
+               (:arguments 
+                  ( ("" variable (:type ("_dealloc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [69980 69989]))                  
+                :type ("OBJC_EXPORT" type (:type "class") nil nil))
+                nil [69963 69993])
+            ("OBJC2_UNAVAILABLE" variable (:type "int") nil [70024 70042])
+            ("id" function
+               (:arguments 
+                  ( ("" variable (:type ("_zoneAlloc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [70060 70071]))                  
+                :type ("OBJC_EXPORT" type (:type "class") nil nil))
+                nil [70043 70094])
+            ("OBJC2_UNAVAILABLE" variable (:type "int") nil [70104 70122])
+            ("id" function
+               (:arguments 
+                  ( ("" variable (:type ("_zoneRealloc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [70140 70153]))                  
+                :type ("OBJC_EXPORT" type (:type "class") nil nil))
+                nil [70123 70173])
+            ("OBJC2_UNAVAILABLE" variable (:type "int") nil [70184 70202])
+            ("id" function
+               (:arguments 
+                  ( ("" variable (:type ("_zoneCopy" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [70220 70230]))                  
+                :type ("OBJC_EXPORT" type (:type "class") nil nil))
+                nil [70203 70250])
+            ("OBJC2_UNAVAILABLE" variable (:type "int") nil [70264 70282])
+            ("OBJC2_UNAVAILABLE" variable (:type "int") nil [70344 70362]))          
+    :file "runtime.h"
+    :pointmax 70371
+    :fsize 70390
+    :lastmodtime '(21222 57724 0 0)
+    :unmatched-syntax '((semantic-list 70309 . 70336) (semantic-list 70300 . 70309) (VOID 70295 . 70299) (symbol 70283 . 70294) (punctuation 70219 . 70220) (punctuation 70139 . 70140) (punctuation 70059 . 70060) (punctuation 69979 . 69980) (punctuation 69899 . 69900) (punctuation 69819 . 69820) (punctuation 69739 . 69740) (semantic-list 69528 . 69544) (symbol 69508 . 69528) (punctuation 69507 . 69508) (symbol 69490 . 69506) (STRUCT 69483 . 69489) (symbol 69471 . 69482) (semantic-list 69394 . 69412) (symbol 69377 . 69394) (symbol 69371 . 69376) (symbol 69359 . 69370) (semantic-list 69274 . 69338) (symbol 69252 . 69274) (UNSIGNED 69243 . 69251) (symbol 69231 . 69242) (semantic-list 69201 . 69211) (symbol 69176 . 69201) (INT 69172 . 69175) (UNSIGNED 69163 . 69171) (symbol 69151 . 69162) (semantic-list 69098 . 69130) (symbol 69086 . 69098) (symbol 69080 . 69085) (symbol 69068 . 69079) (semantic-list 69035 . 69046) (symbol 69001 . 69035) (VOID 68996 . 69000) (symbol 68984 . 68995) (semantic-list 68930 . 68964) (symbol 68911 . 68930) (VOID 68906 . 68910) (symbol 68894 . 68905) (semantic-list 68840 . 68874) (symbol 68824 . 68840) (VOID 68819 . 68823) (symbol 68807 . 68818) (semantic-list 68731 . 68779) (symbol 68701 . 68731) (semantic-list 68661 . 68694) (symbol 68633 . 68661) (symbol 68630 . 68632) (symbol 68618 . 68629) (semantic-list 68576 . 68587) (symbol 68554 . 68575) (VOID 68549 . 68553) (symbol 68537 . 68548) (semantic-list 68494 . 68517) (symbol 68474 . 68494) (semantic-list 68502 . 68516) (semantic-list 68499 . 68502) (VOID 68469 . 68473) (semantic-list 68502 . 68516) (semantic-list 68499 . 68502) (symbol 68457 . 68468) (semantic-list 68407 . 68422) (symbol 68394 . 68407) (VOID 68389 . 68393) (symbol 68377 . 68388) (semantic-list 68330 . 68336) (symbol 68315 . 68330) (punctuation 68314 . 68315) (VOID 68309 . 68313) (symbol 68297 . 68308) (semantic-list 68204 . 68241) (symbol 68182 . 68204) (symbol 68179 . 68181) (symbol 68167 . 68178) (semantic-list 68116 . 68144) (symbol 68102 . 68116) (symbol 68099 . 68101) (symbol 68087 . 68098) (semantic-list 68012 . 68060) (symbol 67982 . 68012) (semantic-list 67939 . 67976) (symbol 67920 . 67939) (symbol 67917 . 67919) (symbol 67905 . 67916) (semantic-list 67805 . 67816) (symbol 67787 . 67805) (VOID 67782 . 67786) (symbol 67770 . 67781) (semantic-list 67663 . 67683) (symbol 67641 . 67663) (symbol 67636 . 67640) (symbol 67624 . 67635) (semantic-list 67516 . 67536) (symbol 67498 . 67516) (symbol 67494 . 67497) (symbol 67482 . 67493) (symbol 67257 . 67263) (punctuation 67188 . 67189) (CHAR 67183 . 67187) (CONST 67177 . 67182) (LONG 67106 . 67110) (UNSIGNED 67097 . 67105) (LONG 67026 . 67030) (UNSIGNED 67017 . 67025) (symbol 67257 . 67263) (punctuation 67188 . 67189) (CHAR 67183 . 67187) (CONST 67177 . 67182) (LONG 67106 . 67110) (UNSIGNED 67097 . 67105) (LONG 67026 . 67030) (UNSIGNED 67017 . 67025) (semantic-list 66844 . 66847) (symbol 66837 . 66844) (symbol 66830 . 66836) (INT 66759 . 66762) (UNSIGNED 66750 . 66758) (INT 66679 . 66682) (UNSIGNED 66670 . 66678) (semantic-list 66114 . 66117) (symbol 66110 . 66114) (punctuation 66109 . 66110) (VOID 66104 . 66108) (SHORT 66033 . 66038) (UNSIGNED 66024 . 66032) (SHORT 65953 . 65958) (UNSIGNED 65944 . 65952) (punctuation 65868 . 65869) (symbol 65864 . 65867) (LONG 65793 . 65797) (UNSIGNED 65784 . 65792) (semantic-list 66114 . 66117) (symbol 66110 . 66114) (punctuation 66109 . 66110) (VOID 66104 . 66108) (SHORT 66033 . 66038) (UNSIGNED 66024 . 66032) (SHORT 65953 . 65958) (UNSIGNED 65944 . 65952) (punctuation 65868 . 65869) (symbol 65864 . 65867) (LONG 65793 . 65797) (UNSIGNED 65784 . 65792) (semantic-list 65550 . 65553) (symbol 65539 . 65550) (symbol 65527 . 65538) (STRUCT 65520 . 65526) (INT 65397 . 65400) (INT 65301 . 65304) (punctuation 65244 . 65245) (symbol 65227 . 65243) (STRUCT 65220 . 65226) (semantic-list 65550 . 65553) (symbol 65539 . 65550) (symbol 65527 . 65538) (STRUCT 65520 . 65526) (INT 65397 . 65400) (INT 65301 . 65304) (punctuation 65244 . 65245) (symbol 65227 . 65243) (STRUCT 65220 . 65226) (symbol 65033 . 65036) (punctuation 64958 . 64959) (CHAR 64953 . 64957) (symbol 64873 . 64876) (symbol 65033 . 65036) (punctuation 64958 . 64959) (CHAR 64953 . 64957) (symbol 64873 . 64876) (semantic-list 64716 . 64719) (symbol 64707 . 64716) (symbol 64697 . 64706) (STRUCT 64690 . 64696) (INT 64567 . 64570) (INT 64471 . 64474) (semantic-list 64716 . 64719) (symbol 64707 . 64716) (symbol 64697 . 64706) (STRUCT 64690 . 64696) (INT 64567 . 64570) (INT 64471 . 64474) (INT 64279 . 64282) (INT 64183 . 64186) (punctuation 64108 . 64109) (CHAR 64103 . 64107) (punctuation 64028 . 64029) (CHAR 64023 . 64027) (INT 64279 . 64282) (INT 64183 . 64186) (punctuation 64108 . 64109) (CHAR 64103 . 64107) (punctuation 64028 . 64029) (CHAR 64023 . 64027) (punctuation 63868 . 63869) (symbol 63849 . 63867) (STRUCT 63842 . 63848) (punctuation 63786 . 63787) (symbol 63769 . 63785) (STRUCT 63762 . 63768) (punctuation 63706 . 63707) (symbol 63689 . 63705) (STRUCT 63682 . 63688) (punctuation 63607 . 63608) (CHAR 63602 . 63606) (punctuation 63527 . 63528) (CHAR 63522 . 63526) (punctuation 63868 . 63869) (symbol 63849 . 63867) (STRUCT 63842 . 63848) (punctuation 63786 . 63787) (symbol 63769 . 63785) (STRUCT 63762 . 63768) (punctuation 63706 . 63707) (symbol 63689 . 63705) (STRUCT 63682 . 63688) (punctuation 63607 . 63608) (CHAR 63602 . 63606) (punctuation 63527 . 63528) (CHAR 63522 . 63526) (semantic-list 61101 . 61112) (symbol 61073 . 61101) (VOID 61068 . 61072) (symbol 61056 . 61067) (semantic-list 60388 . 60416) (symbol 60364 . 60388) (symbol 60361 . 60363) (symbol 60349 . 60360) (semantic-list 59933 . 60002) (symbol 59909 . 59933) (VOID 59904 . 59908) (symbol 59892 . 59903) (semantic-list 58216 . 58238) (symbol 58202 . 58216) (symbol 58199 . 58201) (symbol 58187 . 58198) (semantic-list 57780 . 57794) (symbol 57767 . 57780) (symbol 57764 . 57766) (symbol 57752 . 57763) (semantic-list 57263 . 57274) (symbol 57248 . 57263) (symbol 57243 . 57247) (symbol 57231 . 57242) (semantic-list 56762 . 56773) (symbol 56750 . 56762) (symbol 56747 . 56749) (symbol 56735 . 56746) (semantic-list 56460 . 56470) (symbol 56433 . 56460) (symbol 56429 . 56432) (symbol 56417 . 56428) (semantic-list 55889 . 55917) (symbol 55867 . 55889) (VOID 55862 . 55866) (symbol 55850 . 55861) (semantic-list 55533 . 55554) (symbol 55499 . 55533) (semantic-list 55549 . 55553) (semantic-list 55539 . 55549) (VOID 55494 . 55498) (semantic-list 55549 . 55553) (semantic-list 55539 . 55549) (symbol 55482 . 55493) (semantic-list 55298 . 55306) (symbol 55274 . 55298) (VOID 55269 . 55273) (symbol 55257 . 55268) (semantic-list 54823 . 54841) (symbol 54812 . 54823) (symbol 54807 . 54811) (symbol 54795 . 54806) (semantic-list 54419 . 54436) (symbol 54403 . 54419) (symbol 54399 . 54402) (symbol 54387 . 54398) (semantic-list 53731 . 53748) (symbol 53721 . 53731) (symbol 53717 . 53720) (symbol 53705 . 53716) (semantic-list 52983 . 52992) (symbol 52972 . 52983) (punctuation 52971 . 52972) (CHAR 52966 . 52970) (CONST 52960 . 52965) (symbol 52948 . 52959) (semantic-list 52527 . 52624) (symbol 52500 . 52527) (punctuation 52499 . 52500) (punctuation 52498 . 52499) (CHAR 52493 . 52497) (CONST 52487 . 52492) (symbol 52475 . 52486) (semantic-list 52145 . 52156) (symbol 52127 . 52145) (punctuation 52126 . 52127) (CHAR 52121 . 52125) (CONST 52115 . 52120) (symbol 52103 . 52114) (semantic-list 51834 . 51858) (symbol 51815 . 51834) (punctuation 51814 . 51815) (punctuation 51813 . 51814) (CHAR 51808 . 51812) (CONST 51802 . 51807) (symbol 51790 . 51801) (semantic-list 51316 . 51475) (symbol 51296 . 51316) (VOID 51291 . 51295) (symbol 51279 . 51290) (semantic-list 50565 . 50602) (symbol 50545 . 50565) (VOID 50540 . 50544) (symbol 50528 . 50539) (semantic-list 50008 . 50100) (symbol 49979 . 50008) (VOID 49974 . 49978) (symbol 49962 . 49973) (semantic-list 49498 . 49515) (symbol 49477 . 49498) (VOID 49472 . 49476) (symbol 49460 . 49471) (semantic-list 49191 . 49209) (symbol 49170 . 49191) (punctuation 49169 . 49170) (symbol 49160 . 49168) (symbol 49148 . 49159) (semantic-list 48721 . 48762) (symbol 48696 . 48721) (punctuation 48695 . 48696) (symbol 48675 . 48694) (punctuation 48673 . 48674) (symbol 48664 . 48672) (symbol 48652 . 48663) (semantic-list 48096 . 48137) (symbol 48071 . 48096) (punctuation 48070 . 48071) (symbol 48054 . 48069) (symbol 48042 . 48053) (semantic-list 47297 . 47382) (symbol 47277 . 47297) (symbol 47261 . 47276) (symbol 47249 . 47260) (semantic-list 46592 . 46675) (symbol 46558 . 46592) (punctuation 46557 . 46558) (symbol 46533 . 46556) (STRUCT 46526 . 46532) (symbol 46514 . 46525) (semantic-list 45336 . 45405) (symbol 45307 . 45336) (symbol 45283 . 45306) (STRUCT 45276 . 45282) (symbol 45264 . 45275) (semantic-list 44451 . 44464) (symbol 44435 . 44451) (punctuation 44434 . 44435) (CHAR 44429 . 44433) (CONST 44423 . 44428) (symbol 44411 . 44422) (semantic-list 44186 . 44220) (symbol 44170 . 44186) (symbol 44165 . 44169) (symbol 44153 . 44164) (semantic-list 43840 . 43874) (symbol 43813 . 43840) (symbol 43808 . 43812) (symbol 43796 . 43807) (semantic-list 43185 . 43209) (symbol 43164 . 43185) (punctuation 43163 . 43164) (symbol 43143 . 43162) (punctuation 43141 . 43142) (symbol 43132 . 43140) (symbol 43120 . 43131) (semantic-list 42639 . 42657) (symbol 42623 . 42639) (punctuation 42622 . 42623) (symbol 42613 . 42621) (symbol 42601 . 42612) (semantic-list 42220 . 42273) (symbol 42193 . 42220) (punctuation 42192 . 42193) (CHAR 42187 . 42191) (symbol 42175 . 42186) (semantic-list 41722 . 41772) (symbol 41696 . 41722) (punctuation 41695 . 41696) (symbol 41669 . 41694) (symbol 41657 . 41668) (semantic-list 41284 . 41310) (symbol 41262 . 41284) (punctuation 41261 . 41262) (CHAR 41256 . 41260) (CONST 41250 . 41255) (symbol 41238 . 41249) (semantic-list 40872 . 40898) (symbol 40856 . 40872) (punctuation 40855 . 40856) (CHAR 40850 . 40854) (CONST 40844 . 40849) (symbol 40832 . 40843) (semantic-list 40567 . 40575) (symbol 40553 . 40567) (symbol 40543 . 40552) (symbol 40531 . 40542) (semantic-list 40109 . 40117) (symbol 40089 . 40109) (punctuation 40088 . 40089) (CHAR 40083 . 40087) (CONST 40077 . 40082) (symbol 40065 . 40076) (semantic-list 39702 . 39710) (symbol 39690 . 39702) (punctuation 39689 . 39690) (CHAR 39684 . 39688) (CONST 39678 . 39683) (symbol 39666 . 39677) (semantic-list 39358 . 39380) (symbol 39328 . 39358) (VOID 39323 . 39327) (symbol 39311 . 39322) (semantic-list 38816 . 38835) (symbol 38792 . 38816) (symbol 38788 . 38791) (symbol 38776 . 38787) (semantic-list 38482 . 38492) (symbol 38461 . 38482) (punctuation 38460 . 38461) (symbol 38436 . 38459) (STRUCT 38429 . 38435) (symbol 38417 . 38428) (semantic-list 38260 . 38358) (symbol 38238 . 38260) (VOID 38233 . 38237) (symbol 38221 . 38232) (semantic-list 37503 . 37540) (symbol 37483 . 37503) (VOID 37478 . 37482) (symbol 37466 . 37477) (semantic-list 36956 . 36986) (symbol 36933 . 36956) (punctuation 36932 . 36933) (CHAR 36927 . 36931) (symbol 36915 . 36926) (semantic-list 36493 . 36503) (symbol 36472 . 36493) (punctuation 36471 . 36472) (CHAR 36466 . 36470) (symbol 36454 . 36465) (semantic-list 36188 . 36198) (symbol 36161 . 36188) (INT 36157 . 36160) (UNSIGNED 36148 . 36156) (symbol 36136 . 36147) (semantic-list 35823 . 35833) (symbol 35801 . 35823) (punctuation 35800 . 35801) (CHAR 35795 . 35799) (CONST 35789 . 35794) (symbol 35777 . 35788) (semantic-list 35535 . 35545) (symbol 35511 . 35535) (symbol 35507 . 35510) (symbol 35495 . 35506) (semantic-list 35287 . 35297) (symbol 35273 . 35287) (symbol 35269 . 35272) (symbol 35257 . 35268) (semantic-list 34942 . 34953) (symbol 34921 . 34942) (VOID 34916 . 34920) (symbol 34904 . 34915) (semantic-list 34548 . 34601) (symbol 34529 . 34548) (symbol 34523 . 34528) (symbol 34511 . 34522) (semantic-list 34334 . 34345) (symbol 34312 . 34334) (VOID 34307 . 34311) (symbol 34295 . 34306) (semantic-list 34006 . 34103) (symbol 33984 . 34006) (symbol 33978 . 33983) (symbol 33966 . 33977) (semantic-list 32852 . 32878) (symbol 32828 . 32852) (semantic-list 32814 . 32822) (symbol 32793 . 32814) (punctuation 32792 . 32793) (VOID 32787 . 32791) (symbol 32775 . 32786) (semantic-list 32347 . 32373) (symbol 32323 . 32347) (semantic-list 32293 . 32317) (symbol 32271 . 32293) (symbol 32268 . 32270) (symbol 32256 . 32267) (semantic-list 31656 . 31682) (symbol 31632 . 31656) (semantic-list 31597 . 31627) (symbol 31577 . 31597) (symbol 31574 . 31576) (symbol 31562 . 31573) (semantic-list 31034 . 31060) (symbol 31010 . 31034) (semantic-list 30974 . 31003) (symbol 30955 . 30974) (VOID 30950 . 30954) (symbol 30938 . 30949) (semantic-list 30774 . 30800) (symbol 30750 . 30774) (semantic-list 30725 . 30743) (symbol 30706 . 30725) (symbol 30700 . 30705) (symbol 30688 . 30699) (semantic-list 30298 . 30332) (symbol 30275 . 30298) (VOID 30270 . 30274) (symbol 30258 . 30269) (semantic-list 30006 . 30040) (symbol 29987 . 30006) (VOID 29982 . 29986) (symbol 29970 . 29981) (semantic-list 29661 . 29764) (symbol 29640 . 29661) (VOID 29635 . 29639) (symbol 29623 . 29634) (semantic-list 29214 . 29317) (symbol 29197 . 29214) (symbol 29192 . 29196) (symbol 29180 . 29191) (semantic-list 28713 . 28744) (symbol 28696 . 28713) (symbol 28691 . 28695) (symbol 28679 . 28690) (semantic-list 28237 . 28349) (symbol 28224 . 28237) (symbol 28219 . 28223) (symbol 28207 . 28218) (semantic-list 27281 . 27367) (symbol 27262 . 27281) (symbol 27258 . 27261) (symbol 27246 . 27257) (semantic-list 25995 . 26078) (symbol 25980 . 25995) (symbol 25975 . 25979) (symbol 25963 . 25974) (semantic-list 25073 . 25084) (symbol 25050 . 25073) (punctuation 25049 . 25050) (symbol 25041 . 25048) (CONST 25035 . 25040) (symbol 25023 . 25034) (semantic-list 24756 . 24767) (symbol 24737 . 24756) (punctuation 24736 . 24737) (symbol 24728 . 24735) (CONST 24722 . 24727) (symbol 24710 . 24721) (semantic-list 24438 . 24473) (symbol 24416 . 24438) (punctuation 24415 . 24416) (symbol 24399 . 24414) (symbol 24387 . 24398) (semantic-list 23651 . 23680) (symbol 23634 . 23651) (symbol 23618 . 23633) (symbol 23606 . 23617) (semantic-list 23149 . 23184) (symbol 23127 . 23149) (punctuation 23126 . 23127) (symbol 23106 . 23125) (punctuation 23104 . 23105) (symbol 23095 . 23103) (symbol 23083 . 23094) (semantic-list 22384 . 22415) (symbol 22360 . 22384) (symbol 22355 . 22359) (symbol 22343 . 22354) (semantic-list 21911 . 21946) (symbol 21891 . 21911) (punctuation 21890 . 21891) (symbol 21883 . 21889) (symbol 21871 . 21882) (semantic-list 20901 . 20921) (symbol 20877 . 20901) (symbol 20872 . 20876) (symbol 20860 . 20871) (semantic-list 20354 . 20375) (symbol 20319 . 20354) (symbol 20315 . 20318) (symbol 20303 . 20314) (semantic-list 19863 . 19884) (symbol 19834 . 19863) (symbol 19830 . 19833) (symbol 19818 . 19829) (semantic-list 18957 . 18978) (symbol 18937 . 18957) (symbol 18930 . 18936) (symbol 18918 . 18929) (semantic-list 18108 . 18129) (symbol 18085 . 18108) (symbol 18078 . 18084) (symbol 18066 . 18077) (semantic-list 17416 . 17451) (symbol 17398 . 17416) (punctuation 17397 . 17398) (symbol 17392 . 17396) (symbol 17380 . 17391) (semantic-list 16665 . 16694) (symbol 16643 . 16665) (symbol 16638 . 16642) (symbol 16626 . 16637) (semantic-list 16189 . 16218) (symbol 16164 . 16189) (symbol 16159 . 16163) (symbol 16147 . 16158) (semantic-list 15717 . 15728) (symbol 15696 . 15717) (symbol 15689 . 15695) (symbol 15677 . 15688) (semantic-list 15411 . 15435) (symbol 15395 . 15411) (VOID 15390 . 15394) (symbol 15378 . 15389) (semantic-list 14427 . 14438) (symbol 14411 . 14427) (INT 14407 . 14410) (symbol 14395 . 14406) (semantic-list 13977 . 14004) (symbol 13958 . 13977) (symbol 13952 . 13957) (symbol 13940 . 13951) (semantic-list 13617 . 13628) (symbol 13598 . 13617) (symbol 13592 . 13597) (symbol 13580 . 13591) (semantic-list 13216 . 13227) (symbol 13199 . 13216) (symbol 13194 . 13198) (symbol 13182 . 13193) (semantic-list 12870 . 12881) (symbol 12857 . 12870) (punctuation 12856 . 12857) (CHAR 12851 . 12855) (CONST 12845 . 12850) (symbol 12833 . 12844) (semantic-list 12567 . 12591) (symbol 12549 . 12567) (punctuation 12548 . 12549) (symbol 12542 . 12547) (symbol 12530 . 12541) (semantic-list 12100 . 12132) (symbol 12083 . 12100) (INT 12079 . 12082) (symbol 12067 . 12078) (semantic-list 10727 . 10745) (symbol 10706 . 10727) (symbol 10700 . 10705) (symbol 10688 . 10699) (semantic-list 10207 . 10225) (symbol 10191 . 10207) (symbol 10185 . 10190) (symbol 10173 . 10184) (semantic-list 9567 . 9585) (symbol 9550 . 9567) (symbol 9544 . 9549) (symbol 9532 . 9543) (semantic-list 8843 . 8861) (symbol 8830 . 8843) (symbol 8824 . 8829) (symbol 8812 . 8823) (semantic-list 8041 . 8067) (symbol 8017 . 8041) (semantic-list 7969 . 8012) (symbol 7943 . 7969) (symbol 7938 . 7942) (symbol 7926 . 7937) (semantic-list 7334 . 7360) (symbol 7310 . 7334) (semantic-list 7266 . 7305) (symbol 7240 . 7266) (symbol 7235 . 7239) (symbol 7223 . 7234) (semantic-list 6626 . 6655) (symbol 6612 . 6626) (VOID 6607 . 6611) (symbol 6595 . 6606) (semantic-list 6081 . 6100) (symbol 6067 . 6081) (symbol 6064 . 6066) (symbol 6052 . 6063) (semantic-list 5511 . 5537) (symbol 5487 . 5511) (semantic-list 5474 . 5482) (symbol 5452 . 5474) (punctuation 5451 . 5452) (VOID 5446 . 5450) (symbol 5434 . 5445) (semantic-list 4435 . 4443) (symbol 4416 . 4435) (punctuation 4415 . 4416) (CHAR 4410 . 4414) (CONST 4404 . 4409) (symbol 4392 . 4403) (semantic-list 4149 . 4168) (symbol 4134 . 4149) (symbol 4128 . 4133) (symbol 4116 . 4127) (semantic-list 3847 . 3855) (symbol 3832 . 3847) (symbol 3826 . 3831) (symbol 3814 . 3825) (semantic-list 3560 . 3586) (symbol 3536 . 3560) (semantic-list 3523 . 3531) (symbol 3509 . 3523) (symbol 3506 . 3508) (symbol 3494 . 3505) (semantic-list 3323 . 3349) (symbol 3299 . 3323) (semantic-list 3273 . 3294) (symbol 3262 . 3273) (symbol 3259 . 3261) (symbol 3247 . 3258) (punctuation 2400 . 2401) (symbol 2381 . 2399) (STRUCT 2374 . 2380) (punctuation 2312 . 2313) (symbol 2301 . 2311) (STRUCT 2294 . 2300) (punctuation 2239 . 2240) (punctuation 2238 . 2239) (symbol 2221 . 2237) (STRUCT 2214 . 2220) (punctuation 2156 . 2157) (symbol 2141 . 2155) (STRUCT 2134 . 2140) (LONG 2054 . 2058) (LONG 1974 . 1978) (LONG 1894 . 1898) (punctuation 1825 . 1826) (CHAR 1820 . 1824) (CONST 1814 . 1819) (symbol 1734 . 1739) (symbol 1680 . 1685) (punctuation 2400 . 2401) (symbol 2381 . 2399) (STRUCT 2374 . 2380) (punctuation 2312 . 2313) (symbol 2301 . 2311) (STRUCT 2294 . 2300) (punctuation 2239 . 2240) (punctuation 2238 . 2239) (symbol 2221 . 2237) (STRUCT 2214 . 2220) (punctuation 2156 . 2157) (symbol 2141 . 2155) (STRUCT 2134 . 2140) (LONG 2054 . 2058) (LONG 1974 . 1978) (LONG 1894 . 1898) (punctuation 1825 . 1826) (CHAR 1820 . 1824) (CONST 1814 . 1819) (symbol 1734 . 1739) (symbol 1680 . 1685))
+    :lexical-table 
+        '(("_C_FLT" . ((string "'f'" 61503 . 61506)))
+          ("_C_VOID" . ((string "'v'" 61599 . 61602)))
+          ("_C_CHARPTR" . ((string "'*'" 61671 . 61674)))
+          ("_C_ARY_E" . ((string "']'" 61743 . 61746)))
+          ("_C_CONST" . ((string "'r'" 61887 . 61890)))
+          ("_C_SHT" . ((string "'s'" 61311 . 61314)))
+          ("_C_ULNG_LNG" . ((string "'Q'" 61479 . 61482)))
+          ("_C_UNION_B" . ((string "'('" 61767 . 61770)))
+          ("CLS_SETINFO" (spp-arg-list ("cls" "infomask") 62018 . 62032) . ((semantic-list "((cls)->info |= (infomask))" 62040 . 62067)))
+          ("CLS_INITIALIZED" . ((number "0x4" 62269 . 62272)))
+          ("CACHE_HASH" (spp-arg-list ("sel" "mask") 66578 . 66589) . ((semantic-list "(((unsigned int)((uintptr_t)(sel)>>3)) & (mask))" 66590 . 66638)))
+          ("_C_UINT" . ((string "'I'" 61383 . 61386)))
+          ("_C_STRUCT_B" . ((string "'{'" 61815 . 61818)))
+          ("CLS_GETINFO" (spp-arg-list ("cls" "infomask") 61950 . 61964) . ((semantic-list "((cls)->info & (infomask))" 61972 . 61998)))
+          ("CLS_FLUSH_CACHE" . ((number "0x20" 62469 . 62473)))
+          ("CLS_INITIALIZING" . ((number "0x800" 62865 . 62870)))
+          ("CLS_CONSTRUCTING" . ((number "0x10000" 63180 . 63187)))
+          ("CACHE_BUCKET_VALID" (spp-arg-list ("B") 66466 . 66469) . ((semantic-list "(B)" 66470 . 66473)))
+          ("OBSOLETE_OBJC_GETCLASSES" . ((number "1" 68295 . 68296)))
+          ("_C_ULNG" . ((string "'L'" 61431 . 61434)))
+          ("_C_LNG_LNG" . ((string "'q'" 61455 . 61458)))
+          ("CLS_POSING" . ((number "0x8" 62324 . 62327)))
+          ("CLS_MAPPED" . ((number "0x10" 62370 . 62374)))
+          ("_C_UNION_E" . ((string "')'" 61791 . 61794)))
+          ("CLS_NEED_BIND" . ((number "0x80" 62591 . 62595)))
+          ("CLS_METHOD_ARRAY" . ((number "0x100" 62668 . 62673)))
+          ("CLS_JAVA_HYBRID" . ((number "0x200" 62762 . 62767)))
+          ("CLS_HAS_LOAD_METHOD" . ((number "0x8000" 63111 . 63117)))
+          ("CACHE_BUCKET_IMP" (spp-arg-list ("B") 66416 . 66419) . ((semantic-list "((B)->method_imp)" 66422 . 66439)))
+          ("_C_STRUCT_E" . ((string "'}'" 61839 . 61842)))
+          ("CLS_GROW_CACHE" . ((number "0x40" 62544 . 62548)))
+          ("_C_UCHR" . ((string "'C'" 61287 . 61290)))
+          ("_C_BOOL" . ((string "'B'" 61575 . 61578)))
+          ("_C_INT" . ((string "'i'" 61359 . 61362)))
+          ("CLS_FROM_BUNDLE" . ((number "0x1000" 62923 . 62929)))
+          ("CACHE_BUCKET_NAME" (spp-arg-list ("B") 66368 . 66371) . ((semantic-list "((B)->method_name)" 66373 . 66391)))
+          ("_OBJC_RUNTIME_H")
+          ("_C_LNG" . ((string "'l'" 61407 . 61410)))
+          ("_C_PTR" . ((string "'^'" 61647 . 61650)))
+          ("CLS_HAS_CXX_STRUCTORS" . ((number "0x2000" 62982 . 62988)))
+          ("_C_CLASS" . ((string "'#'" 61215 . 61218)))
+          ("_C_USHT" . ((string "'S'" 61335 . 61338)))
+          ("_C_DBL" . ((string "'d'" 61527 . 61530)))
+          ("_C_SEL" . ((string "':'" 61239 . 61242)))
+          ("_C_ARY_B" . ((string "'['" 61719 . 61722)))
+          ("CLS_META" . ((number "0x2" 62189 . 62192)))
+          ("CLS_EXT" . ((number "0x20000" 63266 . 63273)))
+          ("OBJC_NEXT_METHOD_LIST" . ((number "1" 69469 . 69470)))
+          ("_C_CHR" . ((string "'c'" 61263 . 61266)))
+          ("_C_UNDEF" . ((string "'?'" 61623 . 61626)))
+          ("_C_VECTOR" . ((string "'!'" 61863 . 61866)))
+          ("CLS_JAVA_CLASS" . ((number "0x400" 62800 . 62805)))
+          ("_C_ID" . ((string "'@'" 61191 . 61194)))
+          ("_C_BFLD" . ((string "'b'" 61551 . 61554)))
+          ("_C_ATOM" . ((string "'%'" 61695 . 61698)))
+          ("CLS_CLASS" . ((number "0x1" 62129 . 62132)))
+          ("CLS_NO_METHOD_ARRAY" . ((number "0x4000" 63048 . 63054)))
+          )
+
+    )
+   (semanticdb-table "message.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("_OBJC_MESSAGE_H" variable (:constant-flag t) nil [1010 1025])
+            ("objc/objc.h" include (:system-flag t) nil [1054 1076])
+            ("objc/runtime.h" include (:system-flag t) nil [1077 1102])
+            ("OBJC_SUPER" variable (:constant-flag t) nil [1132 1142])
+            ("objc_super" type
+               (:members 
+                  ( ("receiver" variable (:type ("id" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1276 1288])
+                    ("super_class" variable (:type ("Class" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1531 1549]))                  
+                :type "struct")
+                nil [1190 1610])
+            ("__OSX_AVAILABLE_STARTING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("__MAC_10_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2121 2132])
+                    ("" variable (:type ("__IPHONE_2_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2133 2146]))                  
+                :type "int")
+                nil [2096 2147])
+            ("__OSX_AVAILABLE_STARTING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("__MAC_10_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2263 2274])
+                    ("" variable (:type ("__IPHONE_2_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2275 2288]))                  
+                :type "int")
+                nil [2238 2289])
+            ("__OSX_AVAILABLE_STARTING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("__MAC_10_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4541 4552])
+                    ("" variable (:type ("__IPHONE_2_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4553 4566]))                  
+                :type "int")
+                nil [4516 4567])
+            ("__OSX_AVAILABLE_STARTING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("__MAC_10_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4689 4700])
+                    ("" variable (:type ("__IPHONE_2_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4701 4714]))                  
+                :type "int")
+                nil [4664 4715])
+            ("__OSX_AVAILABLE_STARTING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("__MAC_10_4" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6026 6037])
+                    ("" variable (:type ("__IPHONE_2_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6038 6051]))                  
+                :type "int")
+                nil [6001 6052])
+            ("__OSX_AVAILABLE_STARTING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("__MAC_10_5" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6181 6192])
+                    ("" variable (:type ("__IPHONE_2_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6193 6206]))                  
+                :type "int")
+                nil [6156 6207])
+            ("__OSX_AVAILABLE_STARTING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("__MAC_10_5" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6308 6319])
+                    ("" variable (:type ("__IPHONE_2_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6320 6333]))                  
+                :type "int")
+                nil [6283 6334])
+            ("__OSX_AVAILABLE_STARTING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("__MAC_10_5" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8362 8373])
+                    ("" variable (:type ("__IPHONE_2_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8374 8387]))                  
+                :type "int")
+                nil [8337 8388])
+            ("__OSX_AVAILABLE_STARTING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("__MAC_10_5" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8496 8507])
+                    ("" variable (:type ("__IPHONE_2_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8508 8521]))                  
+                :type "int")
+                nil [8471 8522])
+            ("__OSX_AVAILABLE_STARTING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("__MAC_10_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9448 9459])
+                    ("" variable (:type ("__IPHONE_2_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9460 9473]))                  
+                :type "int")
+                nil [9423 9474])
+            ("__OSX_AVAILABLE_STARTING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("__MAC_10_6" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9584 9595])
+                    ("" variable (:type ("__IPHONE_3_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9596 9609]))                  
+                :type "int")
+                nil [9559 9610])
+            ("marg_list" type
+               (:typedef ("void")
+                :pointer 1
+                :superclasses "void"
+                :type "typedef")
+                nil [10347 10371])
+            ("OBJC2_UNAVAILABLE" variable (:type "int") nil [10457 10475])
+            ("OBJC2_UNAVAILABLE" variable (:type "int") nil [10585 10603])
+            ("OBJC2_UNAVAILABLE" variable (:type "int") nil [10903 10921])
+            ("marg_prearg_size" variable (:constant-flag t) nil [11091 11107])
+            ("marg_malloc" variable (:constant-flag t) nil [11119 11130])
+            ("marg_free" variable (:constant-flag t) nil [11279 11288])
+            ("marg_adjustedOffset" variable (:constant-flag t) nil [11346 11365])
+            ("marg_getRef" variable (:constant-flag t) nil [11422 11433])
+            ("marg_getValue" variable (:constant-flag t) nil [11533 11546])
+            ("marg_setValue" variable (:constant-flag t) nil [11618 11631]))          
+    :file "message.h"
+    :pointmax 11728
+    :fsize 11729
+    :lastmodtime '(21222 57724 0 0)
+    :unmatched-syntax '((semantic-list 10845 . 10902) (symbol 10826 . 10845) (DOUBLE 10819 . 10825) (symbol 10807 . 10818) (semantic-list 10512 . 10584) (symbol 10493 . 10512) (VOID 10488 . 10492) (symbol 10476 . 10487) (semantic-list 10401 . 10456) (symbol 10388 . 10401) (symbol 10385 . 10387) (symbol 10373 . 10384) (semantic-list 9514 . 9553) (symbol 9492 . 9514) (VOID 9487 . 9491) (symbol 9475 . 9486) (semantic-list 9378 . 9417) (symbol 9362 . 9378) (VOID 9357 . 9361) (symbol 9345 . 9356) (semantic-list 8425 . 8465) (symbol 8406 . 8425) (VOID 8401 . 8405) (symbol 8389 . 8400) (semantic-list 8291 . 8331) (symbol 8278 . 8291) (VOID 8273 . 8277) (symbol 8261 . 8272) (semantic-list 6244 . 6278) (symbol 6225 . 6244) (VOID 6220 . 6224) (symbol 6208 . 6219) (semantic-list 6117 . 6151) (symbol 6099 . 6117) (VOID 6094 . 6098) (symbol 6082 . 6093) (semantic-list 5962 . 5996) (symbol 5944 . 5962) (VOID 5939 . 5943) (symbol 5927 . 5938) (semantic-list 4608 . 4659) (symbol 4585 . 4608) (VOID 4580 . 4584) (symbol 4568 . 4579) (semantic-list 4477 . 4511) (symbol 4459 . 4477) (VOID 4454 . 4458) (symbol 4442 . 4453) (semantic-list 2182 . 2233) (symbol 2165 . 2182) (VOID 2160 . 2164) (symbol 2148 . 2159) (semantic-list 2057 . 2091) (symbol 2045 . 2057) (VOID 2040 . 2044) (symbol 2028 . 2039) (symbol 1511 . 1530) (symbol 1256 . 1275) (symbol 1039 . 1052) (symbol 1035 . 1038) (symbol 1028 . 1034) (punctuation 1027 . 1028))
+    :lexical-table 
+        '(("marg_setValue" (spp-arg-list ("margs" "offset" "type" "value") 11631 . 11659) . ((semantic-list "( marg_getValue(margs, offset, type) = (value) )" 11663 . 11711)))
+          ("OBJC_SUPER")
+          ("marg_getRef" (spp-arg-list ("margs" "offset" "type") 11433 . 11454) . ((semantic-list "( (type *)((char *)margs + marg_adjustedOffset(method,offset) ) )" 11458 . 11523)))
+          ("marg_getValue" (spp-arg-list ("margs" "offset" "type") 11546 . 11567) . ((semantic-list "( *marg_getRef(margs, offset, type) )" 11571 . 11608)))
+          ("marg_free" (spp-arg-list ("margs") 11288 . 11295) . 
+              ((DO "do" 11299 . 11301) (semantic-list "{ \\
+		free(margs); \\
+	}" 11302 . 11325) (WHILE "while" 11326 . 11331) (semantic-list "(0)" 11332 . 11335)))
+          ("marg_malloc" (spp-arg-list ("margs" "method") 11130 . 11145) . 
+              ((DO "do" 11149 . 11151) (semantic-list "{ \\
+		margs = (marg_list *)malloc (marg_prearg_size + ((7 + method_getSizeOfArguments(method)) & ~7)); \\
+	}" 11152 . 11259) (WHILE "while" 11260 . 11265) (semantic-list "(0)" 11266 . 11269)))
+          ("_OBJC_MESSAGE_H")
+          ("marg_prearg_size" . ((number "0" 11108 . 11109)))
+          ("marg_adjustedOffset" (spp-arg-list ("method" "offset") 11365 . 11381) . ((semantic-list "(marg_prearg_size + offset)" 11385 . 11412)))
+          )
+
+    )
+   (semanticdb-table "objc-exception.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("__OBJC_EXCEPTION_H_" variable (:constant-flag t) nil [1025 1044])
+            ("objc/objc.h" include (:system-flag t) nil [1046 1068])
+            ("stdint.h" include (:system-flag t) nil [1069 1088])
+            ("__OSX_AVAILABLE_STARTING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("__MAC_10_3" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1257 1268])
+                    ("" variable (:type ("__IPHONE_NA" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1269 1281]))                  
+                :type "int")
+                nil [1232 1282])
+            ("__OSX_AVAILABLE_STARTING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("__MAC_10_3" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1380 1391])
+                    ("" variable (:type ("__IPHONE_NA" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1392 1404]))                  
+                :type "int")
+                nil [1355 1405])
+            ("__OSX_AVAILABLE_STARTING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("__MAC_10_3" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1502 1513])
+                    ("" variable (:type ("__IPHONE_NA" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1514 1526]))                  
+                :type "int")
+                nil [1477 1527])
+            ("__OSX_AVAILABLE_STARTING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("__MAC_10_3" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1621 1632])
+                    ("" variable (:type ("__IPHONE_NA" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1633 1645]))                  
+                :type "int")
+                nil [1596 1646])
+            ("__OSX_AVAILABLE_STARTING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("__MAC_10_3" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1749 1760])
+                    ("" variable (:type ("__IPHONE_NA" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1761 1773]))                  
+                :type "int")
+                nil [1724 1774])
+            ("objc_exception_functions_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("version" variable (:type "int") (reparse-symbol classsubparts) [1798 1810])
+                          ("throw_exc" variable
+                             (:functionpointer-flag t
+                              :type "void")
+                              (reparse-symbol classsubparts) [1815 1837])
+                          ("try_enter" variable
+                             (:functionpointer-flag t
+                              :type "void")
+                              (reparse-symbol classsubparts) [1856 1882])
+                          ("try_exit" variable
+                             (:functionpointer-flag t
+                              :type "void")
+                              (reparse-symbol classsubparts) [1900 1925])
+                          ("extract" variable
+                             (:functionpointer-flag t
+                              :type ("id" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [1943 1966])
+                          ("match" variable
+                             (:functionpointer-flag t
+                              :type "int")
+                              (reparse-symbol classsubparts) [1984 2008]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [1777 2051])
+            ("__OSX_AVAILABLE_STARTING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("__MAC_10_3" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2200 2211])
+                    ("" variable (:type ("__IPHONE_NA" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2212 2224]))                  
+                :type "int")
+                nil [2175 2225])
+            ("__OSX_AVAILABLE_STARTING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("__MAC_10_3" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2350 2361])
+                    ("" variable (:type ("__IPHONE_NA" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2362 2374]))                  
+                :type "int")
+                nil [2325 2375]))          
+    :file "objc-exception.h"
+    :pointmax 4146
+    :fsize 4145
+    :lastmodtime '(21222 57724 0 0)
+    :unmatched-syntax '((semantic-list 2285 . 2320) (symbol 2257 . 2285) (VOID 2252 . 2256) (symbol 2240 . 2251) (semantic-list 2135 . 2170) (symbol 2107 . 2135) (VOID 2102 . 2106) (symbol 2090 . 2101) (semantic-list 1683 . 1719) (symbol 1663 . 1683) (INT 1659 . 1662) (symbol 1647 . 1658) (semantic-list 1565 . 1591) (symbol 1543 . 1565) (symbol 1540 . 1542) (symbol 1528 . 1539) (semantic-list 1446 . 1472) (symbol 1423 . 1446) (VOID 1418 . 1422) (symbol 1406 . 1417) (semantic-list 1324 . 1350) (symbol 1300 . 1324) (VOID 1295 . 1299) (symbol 1283 . 1294) (semantic-list 1213 . 1227) (symbol 1193 . 1213) (VOID 1188 . 1192) (symbol 1176 . 1187))
+    :lexical-table 
+        '(("__OBJC_EXCEPTION_H_")
+          )
+
+    )
+   (semanticdb-table "objc-sync.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("__OBJC_SNYC_H_" variable (:constant-flag t) nil [1010 1024])
+            ("objc/objc.h" include (:system-flag t) nil [1026 1048])
+            ("__OSX_AVAILABLE_STARTING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("__MAC_10_3" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1349 1360])
+                    ("" variable (:type ("__IPHONE_2_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1361 1374]))                  
+                :type "int")
+                nil [1324 1375])
+            ("__OSX_AVAILABLE_STARTING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("__MAC_10_3" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1610 1621])
+                    ("" variable (:type ("__IPHONE_2_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1622 1635]))                  
+                :type "int")
+                nil [1585 1636])
+            ("UNAVAILABLE_ATTRIBUTE" variable (:type "int") nil [1792 1814])
+            ("UNAVAILABLE_ATTRIBUTE" variable (:type "int") nil [1862 1884])
+            ("UNAVAILABLE_ATTRIBUTE" variable (:type "int") nil [1935 1957])
+            ("" type
+               (:members 
+                  ( ("OBJC_SYNC_SUCCESS" variable
+                       (:constant-flag t
+                        :default-value (2003 2004)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1967 2004])
+                    ("OBJC_SYNC_NOT_OWNING_THREAD_ERROR" variable
+                       (:constant-flag t
+                        :default-value (2043 2045)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2007 2045])
+                    ("OBJC_SYNC_TIMED_OUT" variable
+                       (:constant-flag t
+                        :default-value (2084 2086)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2048 2086])
+                    ("OBJC_SYNC_NOT_INITIALIZED" variable
+                       (:constant-flag t
+                        :default-value (2125 2127)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2089 2127]))                  
+                :type "enum")
+                nil [1959 2132]))          
+    :file "objc-sync.h"
+    :pointmax 2160
+    :fsize 2159
+    :lastmodtime '(21222 57724 0 0)
+    :unmatched-syntax '((semantic-list 1921 . 1929) (symbol 1902 . 1921) (INT 1898 . 1901) (symbol 1885 . 1896) (semantic-list 1848 . 1856) (symbol 1832 . 1848) (INT 1828 . 1831) (symbol 1815 . 1826) (semantic-list 1747 . 1786) (symbol 1733 . 1747) (INT 1729 . 1732) (symbol 1716 . 1727) (semantic-list 1572 . 1580) (symbol 1558 . 1572) (INT 1554 . 1557) (symbol 1541 . 1552) (semantic-list 1311 . 1319) (symbol 1296 . 1311) (INT 1292 . 1295) (symbol 1279 . 1290))
+    :lexical-table 
+        '(("__OBJC_SNYC_H_")
+          )
+
+    )
+   )
+  :file "!usr!include!objc!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

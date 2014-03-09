@@ -1,0 +1,82 @@
+;; Object dynamic/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "dynamic/"
+  :tables (list 
+   (semanticdb-table "main.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [133 151])
+            ("Class" type
+               (:typedef ("objc_class" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :pointer 1
+                :superclasses "objc_class"
+                :type "typedef")
+                nil [153 186])
+            ("objc_object" type
+               (:members 
+                  ( ("isa" variable (:type ("Class" type (:type "class") nil nil)) (reparse-symbol classsubparts) [210 220]))                  
+                :type "struct")
+                nil [188 223])
+            ("id" type
+               (:typedef ("objc_object" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :pointer 1
+                :superclasses "objc_object"
+                :type "typedef")
+                nil [225 256])
+            ("SEL" type
+               (:typedef ("objc_selector" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :pointer 1
+                :superclasses "objc_selector"
+                :type "typedef")
+                nil [257 291])
+            ("IMP" variable
+               (:functionpointer-flag t
+                :type ("id" type (:type "class") nil nil))
+                nil [300 325])
+            ("BOOL" type
+               (:typedef ("signed char")
+                :superclasses "signed char"
+                :type "typedef")
+                nil [326 351])
+            ("YES" variable (:constant-flag t) nil [361 364])
+            ("NO" variable (:constant-flag t) nil [383 385])
+            ("nil" variable (:constant-flag t) nil [405 408])
+            ("Nil" variable (:constant-flag t) nil [488 491])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [589 598])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [599 619]))                  
+                :type "int")
+                nil [579 656]))          
+    :file "main.c"
+    :pointmax 520
+    :fsize 657
+    :lastmodtime '(21270 22303 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("NO" . ((semantic-list "((BOOL)0)" 386 . 395)))
+          ("Nil")
+          ("nil" . ((symbol "__DARWIN_NULL" 409 . 422)))
+          ("YES" . ((semantic-list "((BOOL)1)" 365 . 374)))
+          )
+
+    )
+   )
+  :file "!Users!adrian!workspace!c!dynamic!dynamic!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

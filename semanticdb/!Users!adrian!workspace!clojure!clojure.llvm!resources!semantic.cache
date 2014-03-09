@@ -1,0 +1,16 @@
+;; Object resources/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "resources/"
+  :tables (list 
+   (semanticdb-table "test.c"
+    :major-mode 'c-mode
+    :tags nil
+    :file "test.c"
+    :pointmax 1
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!Users!adrian!workspace!clojure!clojure.llvm!resources!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

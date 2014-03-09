@@ -1,0 +1,48 @@
+;; Object clojure/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "clojure/"
+  :tables (list 
+   (semanticdb-table "main.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("iostream" include (:system-flag t) nil [135 154])
+            ("clojure.h" include nil nil [155 175])
+            ("lang/ISeqable.h" include nil nil [176 202])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [213 222])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [223 243]))                  
+                :type "int")
+                nil [204 259]))          
+    :file "main.cpp"
+    :pointmax 278
+    :fsize 277
+    :lastmodtime '(21273 5543 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "clojure.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("clojure_clojure_h" variable (:constant-flag t) nil [170 187])
+            ("nil" variable (:constant-flag t) nil [197 200]))          
+    :file "clojure.h"
+    :pointmax 217
+    :fsize 216
+    :lastmodtime '(21272 59994 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("clojure_clojure_h")
+          ("nil" . ((symbol "nullptr" 201 . 208)))
+          )
+
+    )
+   )
+  :file "!Users!adrian!workspace!c!clojure!clojure!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

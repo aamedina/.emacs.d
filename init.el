@@ -11,6 +11,8 @@
 
 (load custom-file t)
 
+(add-to-list 'load-path "~/.emacs.d/site-lisp")
+
 (require 'package)
 (add-to-list 'package-archives
              '("melpa" . "http://melpa.milkbox.net/packages/")
@@ -35,17 +37,20 @@
 
 (defvar dependencies
   '(better-defaults
+    async
     auto-complete
     ac-js2
     ac-nrepl
     autopair
     find-file-in-project
+    projectile
     paredit
     magit
     markdown-mode
     smex
     diminish
     js2-mode
+    js2-refactor
     skewer-mode
     less-css-mode
     skewer-less
@@ -54,7 +59,8 @@
     yasnippet
     undo-tree
     visual-regexp-steroids
-    slamhound))
+    slamhound
+    emacs-eclim))
 
 (dolist (p dependencies)
   (when (not (package-installed-p p))
@@ -80,19 +86,15 @@
 (add-to-list 'auto-mode-alist '("\\.markdown$" . markdown-mode))
 (add-to-list 'auto-mode-alist '("\\.less$" . less-css-mode))
 (add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
+(add-to-list 'auto-mode-alist '("\\.cljc$" . clojure-mode))
 
-(require 'skewer-setup)
-(skewer-setup)
-(add-hook 'less-css-mode-hook 'skewer-css-mode)
-
-(define-key global-map (kbd "C-c r") 'vr/replace)
-(define-key global-map (kbd "M-%") 'vr/query-replace)
-
-(define-key esc-map (kbd "C-r") 'vr/isearch-backward)
-(define-key esc-map (kbd "C-s") 'vr/isearch-forward)
-
-(yas-global-mode 1)
-
-(global-undo-tree-mode)
+(setq phantomjs-program-name "/usr/local/bin/phantomjs")
 
 (zb)
+
+(require 'eclim)
+(require 'eclimd)
+(global-eclim-mode)
+
+(require 'ac-emacs-eclim-source)
+(ac-emacs-eclim-config)

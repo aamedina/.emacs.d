@@ -1,0 +1,40 @@
+;; Object objc/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "objc/"
+  :tables (list 
+   (semanticdb-table "main.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [130 148])
+            ("stdlib.h" include (:system-flag t) nil [149 168])
+            ("objc/objc.h" include (:system-flag t) nil [169 191])
+            ("objc/runtime.h" include (:system-flag t) nil [192 217])
+            ("objc/message.h" include (:system-flag t) nil [218 243])
+            ("objc/objc-exception.h" include (:system-flag t) nil [244 276])
+            ("objc/objc-sync.h" include (:system-flag t) nil [277 304])
+            ("" type (:type "class") nil [321 330])
+            ("object" type (:type "struct") nil [339 356])
+            ("message" type (:type "struct") nil [365 383])
+            ("method" type (:type "struct") nil [392 409])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [420 429])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [430 450]))                  
+                :type "int")
+                nil [411 469]))          
+    :file "main.c"
+    :pointmax 514
+    :fsize 486
+    :lastmodtime '(21271 29426 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!Users!adrian!workspace!c!objc!objc!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )
