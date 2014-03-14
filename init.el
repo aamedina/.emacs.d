@@ -5,8 +5,6 @@
 
 (require 'cl)
 
-(require 'better-defaults)
-
 (setq ido-use-virtual-buffers t
       inhibit-startup-message t
       custom-file (expand-file-name "~/.emacs.d/custom.el"))
@@ -45,6 +43,8 @@
 
 (mapc 'load (directory-files (concat user-emacs-directory user-login-name)
                              t "^[^#].*el$"))
+
+(require 'better-defaults)
 
 (setq smex-save-file (concat user-emacs-directory ".smex-items"))
 
