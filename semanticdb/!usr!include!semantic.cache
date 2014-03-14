@@ -1089,7 +1089,7 @@
     :file "stdio.h"
     :pointmax 18025
     :fsize 18024
-    :lastmodtime '(21222 57724 0 0)
+    :lastmodtime '(21278 3382 0 0)
     :unmatched-syntax '((close-paren "}" 17427 . 17438) (semantic-list 17416 . 17424) (semantic-list 17413 . 17416) (semantic-list 17369 . 17390) (semantic-list 17366 . 17369) (semantic-list 17313 . 17340) (semantic-list 17310 . 17313) (semantic-list 17266 . 17287) (semantic-list 17263 . 17266) (close-paren "}" 16512 . 16523) (semantic-list 16399 . 16459) (symbol 16392 . 16399) (symbol 16384 . 16391) (semantic-list 16266 . 16331) (symbol 16258 . 16266) (symbol 16250 . 16257) (semantic-list 16139 . 16178) (symbol 16131 . 16139) (INT 16127 . 16130) (semantic-list 16020 . 16055) (symbol 16013 . 16020) (INT 16009 . 16012) (close-paren "}" 15763 . 15774) (close-paren "}" 15187 . 15198) (close-paren "}" 14708 . 14719) (close-paren "}" 13124 . 13135) (close-paren "}" 12738 . 12749) (semantic-list 12575 . 12603) (symbol 12570 . 12575) (punctuation 12569 . 12570) (symbol 12564 . 12568) (close-paren "}" 12112 . 12123) (semantic-list 11936 . 11955) (symbol 11930 . 11936) (punctuation 11929 . 11930) (symbol 11924 . 11928) (close-paren "}" 11368 . 11379) (semantic-list 9335 . 9385) (symbol 9330 . 9335) (punctuation 9329 . 9330) (symbol 9324 . 9328) (close-paren "}" 6135 . 6146))
     :lexical-table 
         '(("__SMBF" . ((number "0x0080" 6511 . 6517)))
@@ -1149,7 +1149,7 @@
    (semanticdb-table "Availability.h"
     :file "Availability.h"
     :fsize 7845
-    :lastmodtime '(21222 57724 0 0)
+    :lastmodtime '(21278 3382 0 0)
     )
    (semanticdb-table "_types.h"
     :major-mode 'c-mode
@@ -1180,7 +1180,7 @@
     :file "_types.h"
     :pointmax 2193
     :fsize 2192
-    :lastmodtime '(21222 57724 0 0)
+    :lastmodtime '(21278 3382 0 0)
     :unmatched-syntax 'nil
     :lexical-table 
         '(("__strfmonlike" (spp-arg-list ("fmtarg" "firstvararg") 1125 . 1146) . ((symbol "__attribute__" 1151 . 1164) (semantic-list "((__format__ (__strfmon__, fmtarg, firstvararg)))" 1164 . 1213)))
@@ -2351,7 +2351,7 @@
     :file "stdlib.h"
     :pointmax 12085
     :fsize 12084
-    :lastmodtime '(21222 57724 0 0)
+    :lastmodtime '(21278 3382 0 0)
     :unmatched-syntax '((close-paren "}" 11952 . 11963) (semantic-list 11138 . 11174) (semantic-list 11135 . 11138) (semantic-list 10937 . 11003) (symbol 10930 . 10937) (semantic-list 10974 . 11002) (semantic-list 10971 . 10974) (VOID 10924 . 10928) (semantic-list 10974 . 11002) (semantic-list 10971 . 10974) (semantic-list 10770 . 10852) (symbol 10763 . 10770) (semantic-list 10815 . 10851) (semantic-list 10812 . 10815) (VOID 10757 . 10761) (semantic-list 10815 . 10851) (semantic-list 10812 . 10815) (semantic-list 10614 . 10680) (symbol 10607 . 10614) (semantic-list 10651 . 10679) (semantic-list 10648 . 10651) (VOID 10601 . 10605) (semantic-list 10651 . 10679) (semantic-list 10648 . 10651) (semantic-list 10464 . 10530) (symbol 10459 . 10464) (semantic-list 10501 . 10529) (semantic-list 10498 . 10501) (VOID 10453 . 10457) (semantic-list 10501 . 10529) (semantic-list 10498 . 10501) (semantic-list 10310 . 10376) (symbol 10299 . 10310) (semantic-list 10347 . 10375) (semantic-list 10344 . 10347) (INT 10294 . 10297) (semantic-list 10347 . 10375) (semantic-list 10344 . 10347) (semantic-list 10245 . 10273) (semantic-list 10242 . 10245) (semantic-list 10051 . 10117) (symbol 10041 . 10051) (semantic-list 10088 . 10116) (semantic-list 10085 . 10088) (INT 10036 . 10039) (semantic-list 10088 . 10116) (semantic-list 10085 . 10088) (semantic-list 9987 . 10015) (semantic-list 9984 . 9987) (semantic-list 9894 . 9896) (semantic-list 9641 . 9651) (symbol 9635 . 9641) (INT 9630 . 9633) (semantic-list 9053 . 9139) (symbol 9044 . 9053) (semantic-list 9110 . 9138) (semantic-list 9107 . 9110) (punctuation 9043 . 9044) (semantic-list 9110 . 9138) (semantic-list 9107 . 9110) (VOID 9038 . 9042) (semantic-list 9110 . 9138) (semantic-list 9107 . 9110) (semantic-list 8969 . 8985) (symbol 8961 . 8969) (semantic-list 8978 . 8984) (semantic-list 8975 . 8978) (INT 8956 . 8959) (semantic-list 8978 . 8984) (semantic-list 8975 . 8978) (semantic-list 8858 . 8885) (symbol 8840 . 8858) (symbol 8828 . 8837) (semantic-list 8711 . 8746) (symbol 8697 . 8711) (VOID 8691 . 8695) (semantic-list 7790 . 7793) (semantic-list 7131 . 7134) (semantic-list 7010 . 7013) (semantic-list 6958 . 6961) (semantic-list 6537 . 6540) (semantic-list 5583 . 5611) (semantic-list 5580 . 5583) (semantic-list 5457 . 5482) (symbol 5443 . 5457) (INT 5437 . 5440) (semantic-list 4884 . 4912) (semantic-list 4881 . 4884) (semantic-list 4630 . 4636) (semantic-list 4627 . 4630))
     :lexical-table 
         '(("RAND_MAX" . ((number "0x7fffffff" 3905 . 3915)))
@@ -2382,7 +2382,7 @@
     :file "alloca.h"
     :pointmax 1377
     :fsize 1376
-    :lastmodtime '(21222 57724 0 0)
+    :lastmodtime '(21278 3382 0 0)
     :unmatched-syntax '((close-paren "}" 1156 . 1167))
     :lexical-table 
         '(("_ALLOCA_H_")
@@ -2397,7 +2397,7 @@
     :file "stdint.h"
     :pointmax 5582
     :fsize 5581
-    :lastmodtime '(21222 57724 0 0)
+    :lastmodtime '(21278 3382 0 0)
     :unmatched-syntax 'nil
     :lexical-table 
         '(("INT_LEAST16_MAX" . ((symbol "INT16_MAX" 2691 . 2700)))
@@ -2532,7 +2532,7 @@
     :file "TargetConditionals.h"
     :pointmax 12778
     :fsize 12777
-    :lastmodtime '(21222 57724 0 0)
+    :lastmodtime '(21278 3382 0 0)
     :unmatched-syntax '((semantic-list 11671 . 11690) (symbol 11662 . 11670) (symbol 11654 . 11661) (punctuation 11652 . 11653) (symbol 11651 . 11652) (punctuation 11650 . 11651) (symbol 11632 . 11650) (symbol 11626 . 11631) (punctuation 11625 . 11626) (symbol 7599 . 7607) (symbol 7597 . 7598) (symbol 7593 . 7596) (symbol 7580 . 7592) (symbol 7574 . 7579) (punctuation 7573 . 7574))
     :lexical-table 
         '(("TARGET_CPU_X86_64" . ((number "1" 6558 . 6559)))
@@ -2658,7 +2658,7 @@
     :file "AvailabilityMacros.h"
     :pointmax 58582
     :fsize 58581
-    :lastmodtime '(21222 57724 0 0)
+    :lastmodtime '(21278 3382 0 0)
     :unmatched-syntax 'nil
     :lexical-table 
         '(("MAC_OS_X_VERSION_10_2" . ((number "1020" 4595 . 4599)))
@@ -2788,7 +2788,7 @@
     :file "assert.h"
     :pointmax 3951
     :fsize 3950
-    :lastmodtime '(21222 57724 0 0)
+    :lastmodtime '(21278 3382 0 0)
     :unmatched-syntax '((close-paren "}" 3217 . 3228))
     :lexical-table 
         '(("assert" (spp-arg-list ("e") 3654 . 3657) . ((semantic-list "(__builtin_expect(!(e), 0) ? __assert_rtn(__func__, __FILE__, __LINE__, #e) : (void)0)" 3664 . 3750)))
@@ -3769,7 +3769,7 @@
     :file "wchar.h"
     :pointmax 10080
     :fsize 10079
-    :lastmodtime '(21222 57724 0 0)
+    :lastmodtime '(21278 3382 0 0)
     :unmatched-syntax '((close-paren "}" 9259 . 9270) (semantic-list 9073 . 9102) (symbol 9066 . 9073) (punctuation 9065 . 9066) (WCHAR 9057 . 9064) (close-paren "}" 8922 . 8933) (semantic-list 8717 . 8742) (symbol 8710 . 8717) (symbol 8702 . 8708) (semantic-list 8605 . 8649) (symbol 8594 . 8605) (INT 8586 . 8589) (semantic-list 8499 . 8533) (symbol 8489 . 8499) (INT 8481 . 8484) (semantic-list 8411 . 8428) (symbol 8405 . 8411) (punctuation 8404 . 8405) (WCHAR 8396 . 8403) (semantic-list 8285 . 8343) (symbol 8278 . 8285) (punctuation 8277 . 8278) (WCHAR 8269 . 8276) (semantic-list 8166 . 8216) (symbol 8160 . 8166) (punctuation 8159 . 8160) (WCHAR 8151 . 8158) (close-paren "}" 7901 . 7912) (close-paren "}" 7120 . 7131))
     :lexical-table 
         '(("WCHAR_MAX" . ((symbol "__DARWIN_WCHAR_MAX" 3857 . 3875)))
@@ -3807,7 +3807,7 @@
     :file "locale.h"
     :pointmax 2289
     :fsize 2288
-    :lastmodtime '(21222 57724 0 0)
+    :lastmodtime '(21278 3382 0 0)
     :unmatched-syntax '((close-paren "}" 2252 . 2263))
     :lexical-table 
         '(("LC_COLLATE" . ((number "1" 2058 . 2059)))
@@ -3911,7 +3911,7 @@
     :file "xlocale.h"
     :pointmax 3127
     :fsize 3126
-    :lastmodtime '(21222 57724 0 0)
+    :lastmodtime '(21278 3382 0 0)
     :unmatched-syntax '((close-paren "}" 2225 . 2236))
     :lexical-table 
         '(("LC_MONETARY_MASK" . ((semantic-list "(1 << 3)" 1567 . 1575)))
@@ -3937,37 +3937,37 @@
    (semanticdb-table "nl_types.h"
     :file "nl_types.h"
     :fsize 3457
-    :lastmodtime '(21222 57724 0 0)
+    :lastmodtime '(21278 3382 0 0)
     )
    (semanticdb-table "time.h"
     :file "time.h"
     :fsize 5874
-    :lastmodtime '(21222 57724 0 0)
+    :lastmodtime '(21278 3382 0 0)
     )
    (semanticdb-table "_wctype.h"
     :file "_wctype.h"
     :fsize 4071
-    :lastmodtime '(21222 57724 0 0)
+    :lastmodtime '(21278 3382 0 0)
     )
    (semanticdb-table "ctype.h"
     :file "ctype.h"
     :fsize 10397
-    :lastmodtime '(21222 57724 0 0)
+    :lastmodtime '(21278 3382 0 0)
     )
    (semanticdb-table "_locale.h"
     :file "_locale.h"
     :fsize 2718
-    :lastmodtime '(21222 57724 0 0)
+    :lastmodtime '(21278 3382 0 0)
     )
    (semanticdb-table "_xlocale.h"
     :file "_xlocale.h"
     :fsize 1158
-    :lastmodtime '(21222 57724 0 0)
+    :lastmodtime '(21278 3382 0 0)
     )
    (semanticdb-table "errno.h"
     :file "errno.h"
     :fsize 1003
-    :lastmodtime '(21222 57724 0 0)
+    :lastmodtime '(21278 3382 0 0)
     )
    (semanticdb-table "inttypes.h"
     :major-mode 'c-mode
@@ -4229,8 +4229,8 @@
                 nil [7936 8032]))          
     :file "inttypes.h"
     :pointmax 8832
-    :fsize 8831
-    :lastmodtime '(21222 57724 0 0)
+    :fsize 8821
+    :lastmodtime '(21278 3382 0 0)
     :unmatched-syntax '((close-paren "}" 8221 . 8232))
     :lexical-table 
         '(("PRIoLEAST8" . ((symbol "PRIo8" 2535 . 2540)))
@@ -4395,6 +4395,15 @@
           ("SCNiMAX" . ((symbol "__SCN_MAX_LENGTH_MODIFIER__" 6800 . 6827) (string "\"i\"" 6828 . 6831)))
           )
 
+    )
+   (semanticdb-table "stddef.h"
+    :major-mode 'c-mode
+    :tags nil
+    :file "stddef.h"
+    :pointmax 5080
+    :fsize 5079
+    :lastmodtime '(21278 3382 0 0)
+    :unmatched-syntax 'nil
     )
    )
   :file "!usr!include!semantic.cache"

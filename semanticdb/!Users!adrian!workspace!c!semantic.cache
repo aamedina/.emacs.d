@@ -1,0 +1,28 @@
+;; Object c/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "c/"
+  :tables (list 
+   (semanticdb-table "main.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [31 40])
+                    ("args" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [41 53]))                  
+                :type "int")
+                nil [21 99]))          
+    :file "main.c"
+    :pointmax 100
+    :fsize 99
+    :lastmodtime '(21279 40787 0 0)
+    :unmatched-syntax '((symbol 21 . 23) (punctuation 20 . 21) (symbol 21 . 23) (punctuation 20 . 21))
+    )
+   )
+  :file "!Users!adrian!workspace!c!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

@@ -5,6 +5,8 @@
 
 (require 'cl)
 
+(require 'better-defaults)
+
 (setq ido-use-virtual-buffers t
       inhibit-startup-message t
       custom-file (expand-file-name "~/.emacs.d/custom.el"))
@@ -22,45 +24,20 @@
 (when (null package-archive-contents)
   (package-refresh-contents))
 
-(defvar cider-dependencies 
-  '(clojure-mode
-    clojure-test-mode
-    dash
-    pkg-info))
-
-(dolist (p cider-dependencies)
-  (when (not (package-installed-p p))
-    (package-install p)))
-
-(add-to-list 'load-path "~/.emacs.d/cider")
-(require 'cider)
-
 (defvar dependencies
   '(better-defaults
     async
-    auto-complete
-    ac-js2
-    ac-nrepl
+    cider
     autopair
-    find-file-in-project
-    projectile
     paredit
     magit
     markdown-mode
     smex
-    diminish
     js2-mode
-    js2-refactor
-    skewer-mode
     less-css-mode
-    skewer-less
-    ido-hacks
     htmlize
     yasnippet
-    undo-tree
-    visual-regexp-steroids
-    slamhound
-    emacs-eclim))
+    slamhound))
 
 (dolist (p dependencies)
   (when (not (package-installed-p p))
@@ -70,10 +47,8 @@
                              t "^[^#].*el$"))
 
 (setq smex-save-file (concat user-emacs-directory ".smex-items"))
-(smex-initialize)
 
-(require 'ido-hacks)
-(ido-hacks-mode)
+(smex-initialize)
 
 (global-set-key (kbd "M-x") 'smex)
 
@@ -88,13 +63,4 @@
 (add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
 (add-to-list 'auto-mode-alist '("\\.cljc$" . clojure-mode))
 
-(setq phantomjs-program-name "/usr/local/bin/phantomjs")
-
 (zb)
-
-(require 'eclim)
-(require 'eclimd)
-(global-eclim-mode)
-
-(require 'ac-emacs-eclim-source)
-(ac-emacs-eclim-config)

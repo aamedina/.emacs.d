@@ -1,0 +1,43 @@
+;; Object Support/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Support/"
+  :tables (list 
+   (semanticdb-table "DataTypes.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("SUPPORT_DATATYPES_H" variable (:constant-flag t) nil [1848 1867])
+            ("HAVE_INTTYPES_H" variable (:constant-flag t) nil [1877 1892])
+            ("HAVE_STDINT_H" variable (:constant-flag t) nil [1903 1916])
+            ("HAVE_UINT64_T" variable (:constant-flag t) nil [1927 1940])
+            ("cmath" include (:system-flag t) nil [1991 2007])
+            ("sys/types.h" include (:system-flag t) nil [2712 2734])
+            ("inttypes.h" include (:system-flag t) nil [2759 2780])
+            ("stdint.h" include (:system-flag t) nil [2810 2829])
+            ("INT64_MAX" variable (:constant-flag t) nil [5165 5174])
+            ("INT64_MIN" variable (:constant-flag t) nil [5237 5246])
+            ("UINT64_MAX" variable (:constant-flag t) nil [5305 5315])
+            ("END_WITH_NULL" variable (:constant-flag t) nil [5371 5384])
+            ("HUGE_VALF" variable (:constant-flag t) nil [5473 5482]))          
+    :file "DataTypes.h"
+    :pointmax 5541
+    :fsize 5540
+    :lastmodtime '(21279 39170 0 0)
+    :unmatched-syntax '((string 2596 . 2628) (string 2540 . 2585) (symbol 2534 . 2539) (punctuation 2532 . 2533) (string 2414 . 2486) (symbol 2408 . 2413) (punctuation 2406 . 2407))
+    :lexical-table 
+        '(("SUPPORT_DATATYPES_H")
+          ("HUGE_VALF" . ((semantic-list "(float)" 5483 . 5490) (symbol "HUGE_VAL" 5490 . 5498)))
+          ("UINT64_MAX" . ((symbol "0xffffffffffffffffULL" 5316 . 5337)))
+          ("HAVE_STDINT_H" . ((number "1" 1917 . 1918)))
+          ("HAVE_UINT64_T" . ((number "1" 1941 . 1942)))
+          ("INT64_MAX" . ((symbol "9223372036854775807LL" 5175 . 5196)))
+          ("INT64_MIN" . ((semantic-list "((-INT64_MAX)-1)" 5247 . 5263)))
+          ("END_WITH_NULL" . ((symbol "__attribute__" 5385 . 5398) (semantic-list "((sentinel))" 5398 . 5410)))
+          ("HAVE_INTTYPES_H" . ((number "1" 1893 . 1894)))
+          )
+
+    )
+   )
+  :file "!usr!local!Cellar!llvm35!HEAD!lib!llvm-3.5!include!llvm!Support!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

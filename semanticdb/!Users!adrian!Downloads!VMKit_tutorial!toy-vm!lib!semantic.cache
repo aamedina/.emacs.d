@@ -1,0 +1,804 @@
+;; Object lib/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "lib/"
+  :tables (list 
+   (semanticdb-table "ToyVM.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("_REACTOR_H_" variable (:constant-flag t) nil [487 498])
+            ("llvm/GVMaterializer.h" include (:system-flag t) nil [565 597])
+            ("cstring" include (:system-flag t) nil [599 617])
+            ("util.h" include nil nil [618 635])
+            ("vmkit/MethodInfo.h" include nil nil [636 665])
+            ("vmkit/VirtualMachine.h" include nil nil [666 699])
+            ("Toy" type
+               (:members 
+                  ( ("ToyCompiler" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [781 799])
+                    ("RModule" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [800 814])
+                    ("ToyVM" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [815 827])
+                    ("Environment" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [828 846])
+                    ("ToyThread" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [847 863])
+                    ("ClArgumentsInfo" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [943 950])
+                            ("argc" variable (:type "int") (reparse-symbol classsubparts) [953 962])
+                            ("argv" variable
+                               (:pointer 2
+                                :type "char")
+                                (reparse-symbol classsubparts) [996 1008])
+                            ("verbose" variable (:type "int") (reparse-symbol classsubparts) [1036 1048])
+                            ("chronometer" variable (:type "int") (reparse-symbol classsubparts) [1073 1089])
+                            ("jit" variable (:type "bool") (reparse-symbol classsubparts) [1118 1127])
+                            ("readArgs" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("vm" variable
+                                       (:pointer 1
+                                        :type ("ToyVM" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1156 1166]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [1142 1167])
+                            ("printInformation" function
+                               (:prototype-flag t
+                                :typemodifiers ("static")
+                                :type "void")
+                                (reparse-symbol classsubparts) [1171 1202])
+                            ("printVersion" function
+                               (:prototype-flag t
+                                :typemodifiers ("static")
+                                :type "void")
+                                (reparse-symbol classsubparts) [1205 1232]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [918 1235])
+                    ("ToyVM" type
+                       (:members 
+                          ( ("private" label nil (reparse-symbol classsubparts) [1308 1316])
+                            ("tend" variable (:type ("timeval" type
+                                 (:prototype t
+                                  :type "struct")
+                                  nil nil)) (reparse-symbol classsubparts) [1339 1366])
+                            ("tbegin" variable (:type ("timeval" type
+                                 (:prototype t
+                                  :type "struct")
+                                  nil nil)) (reparse-symbol classsubparts) [1339 1366])
+                            ("texec" variable (:type "double") (reparse-symbol classsubparts) [1369 1382])
+                            ("public" label nil (reparse-symbol classsubparts) [1409 1416])
+                            ("argumentsInfo" variable (:type ("ClArgumentsInfo" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1490 1520])
+                            ("compiler" variable
+                               (:pointer 1
+                                :type ("ToyCompiler" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1557 1579])
+                            ("ToyVM" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("Alloc" variable
+                                       (:reference 1
+                                        :type ("vmkit::BumpPtrAllocator" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1646 1677])
+                                    ("compiler" variable
+                                       (:pointer 1
+                                        :type ("ToyCompiler" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1687 1709])
+                                    ("frames" variable
+                                       (:pointer 2
+                                        :type ("vmkit::CompiledFrames" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1719 1750]))                                  
+                                :type ("ToyVM" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1640 1751])
+                            ("private" label nil (reparse-symbol classsubparts) [1754 1762]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1283 1766]))                  
+                :type "namespace")
+                nil [765 1769]))          
+    :file "ToyVM.h"
+    :pointmax 1833
+    :fsize 1832
+    :lastmodtime '(21278 23998 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("_REACTOR_H_")
+          )
+
+    )
+   (semanticdb-table "util.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("__UTIL_H" variable (:constant-flag t) nil [165 173])
+            ("inline" variable (:constant-flag t) nil [226 232])
+            ("Pixel.h" include nil nil [279 297])
+            ("TOY_VAL" variable (:constant-flag t) nil [307 314])
+            ("TOY_VAR" variable (:constant-flag t) nil [414 421])
+            ("TOY_PARAM" variable (:constant-flag t) nil [495 504])
+            ("asSelf" variable (:constant-flag t) nil [546 552])
+            ("toyecho" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("msg" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [620 636])
+                    ("fmt" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [637 653])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [654 658]))                  
+                :type "void")
+                nil [600 684])
+            ("do_toyfatal" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("fn" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [702 717])
+                    ("ln" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [718 730])
+                    ("fct" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [731 747])
+                    ("fmt" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [748 764])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [765 769]))                  
+                :type "void")
+                nil [685 796])
+            ("warning" variable (:constant-flag t) nil [806 813])
+            ("toyfatal" variable (:constant-flag t) nil [862 870])
+            ("error_on" variable (:constant-flag t) nil [953 961])
+            ("Assert" variable (:constant-flag t) nil [1059 1065])
+            ("nyi_fatal" variable (:constant-flag t) nil [1124 1133])
+            ("nyi" variable (:constant-flag t) nil [1180 1183])
+            ("PrintNewLine" variable (:constant-flag t) nil [1350 1362])
+            ("rasterfile" type
+               (:members 
+                  ( ("ras_magic" variable (:type "int") (reparse-symbol classsubparts) [1442 1456])
+                    ("ras_width" variable (:type "int") (reparse-symbol classsubparts) [1479 1493])
+                    ("ras_height" variable (:type "int") (reparse-symbol classsubparts) [1527 1542])
+                    ("ras_depth" variable (:type "int") (reparse-symbol classsubparts) [1577 1591])
+                    ("ras_length" variable (:type "int") (reparse-symbol classsubparts) [1635 1650])
+                    ("ras_type" variable (:type "int") (reparse-symbol classsubparts) [1684 1697])
+                    ("ras_maptype" variable (:type "int") (reparse-symbol classsubparts) [1736 1752])
+                    ("ras_maplength" variable (:type "int") (reparse-symbol classsubparts) [1796 1814]))                  
+                :type "struct")
+                nil [1420 1925])
+            ("RAS_MAGIC" variable (:constant-flag t) nil [1934 1943])
+            ("RT_OLD" variable (:constant-flag t) nil [1994 2000])
+            ("RT_STANDARD" variable (:constant-flag t) nil [2056 2067])
+            ("RT_BYTE_ENCODED" variable (:constant-flag t) nil [2122 2137])
+            ("RT_FORMAT_RGB" variable (:constant-flag t) nil [2186 2199])
+            ("RT_FORMAT_TIFF" variable (:constant-flag t) nil [2251 2265])
+            ("RT_FORMAT_IFF" variable (:constant-flag t) nil [2311 2324])
+            ("RT_EXPERIMENTAL" variable (:constant-flag t) nil [2383 2398])
+            ("RMT_RAW" variable (:constant-flag t) nil [2477 2484])
+            ("RMT_NONE" variable (:constant-flag t) nil [2530 2538])
+            ("RMT_EQUAL_RGB" variable (:constant-flag t) nil [2589 2602])
+            ("Toy" type
+               (:members 
+                  ( ("Picture" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [2666 2680])
+                    ("Rasterfile" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [2702 2709])
+                            ("saveRasterfile" function
+                               (:prototype-flag t
+                                :typemodifiers ("static")
+                                :arguments 
+                                  ( ("name" variable
+                                       (:pointer 1
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [3093 3104])
+                                    ("p" variable
+                                       (:pointer 1
+                                        :type ("Picture" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3105 3116]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [3066 3117]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [2682 3121]))                  
+                :type "namespace")
+                nil [2649 3123]))          
+    :file "util.h"
+    :pointmax 3131
+    :fsize 3131
+    :lastmodtime '(20576 10533 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("warning" (spp-arg-list ("...") 813 . 818) . ((symbol "toyecho" 822 . 829) (semantic-list "(\"warning\", __VA_ARGS__)" 829 . 853)))
+          ("toyfatal" (spp-arg-list ("...") 870 . 875) . ((symbol "do_toyfatal" 879 . 890) (semantic-list "(__FILE__, __LINE__, __PRETTY_FUNCTION__, __VA_ARGS__)" 890 . 944)))
+          ("RT_FORMAT_IFF" . ((number "5" 2325 . 2326)))
+          ("__UTIL_H")
+          ("TOY_PARAM" (spp-arg-list ("__var") 504 . 511) . ((symbol "llvm_gcroot" 515 . 526) (semantic-list "(__var, 0)" 526 . 536)))
+          ("nyi" (spp-arg-list nil 1183 . 1185) . ((semantic-list "({ static int z_nyi=0; if(!z_nyi) { z_nyi=1; fprintf(stderr, \"Not yet implemented at %s::%d (%s)\\n\", __FILE__, __LINE__, __PRETTY_FUNCTION__); }})" 1194 . 1340)))
+          ("RT_STANDARD" . ((number "1" 2068 . 2069)))
+          ("inline" . 
+              ((INLINE "inline" 233 . 239) (symbol "__attribute__" 240 . 253) (semantic-list "((always_inline))" 253 . 270)))
+          ("error_on" (spp-arg-list ("__test" "...") 961 . 974) . 
+              ((IF "if" 978 . 980) (semantic-list "(__test)" 980 . 988) (symbol "toyfatal" 992 . 1000) (semantic-list "(\"assertion failed '\" #__test \"':\\t\" __VA_ARGS__)" 1000 . 1049)))
+          ("RT_FORMAT_RGB" . ((number "3" 2200 . 2201)))
+          ("RT_EXPERIMENTAL" . ((number "0xffff" 2399 . 2405)))
+          ("TOY_VAL" (spp-arg-list ("__type" "__var" "__val") 314 . 336) . 
+              ((symbol "__type" 340 . 346) (symbol "__var" 347 . 352) (punctuation "=" 353 . 354) (symbol "NULL" 355 . 359) (punctuation ";" 359 . 360) (symbol "llvm_gcroot" 364 . 375) (semantic-list "(__var, 0)" 375 . 385) (punctuation ";" 385 . 386) (symbol "__var" 391 . 396) (punctuation "=" 397 . 398) (symbol "__val" 399 . 404)))
+          ("RMT_EQUAL_RGB" . ((number "1" 2603 . 2604)))
+          ("Assert" (spp-arg-list ("__test" "...") 1065 . 1078) . ((symbol "error_on" 1082 . 1090) (semantic-list "(!(__test), __VA_ARGS__)" 1090 . 1114)))
+          ("RT_FORMAT_TIFF" . ((number "4" 2266 . 2267)))
+          ("asSelf" (spp-arg-list ("T") 552 . 555) . 
+              ((symbol "T" 559 . 560) (punctuation "*" 560 . 561) (symbol "self" 562 . 566) (punctuation "=" 567 . 568) (symbol "this" 569 . 573) (punctuation ";" 573 . 574) (symbol "llvm_gcroot" 578 . 589) (semantic-list "(self, 0)" 589 . 598)))
+          ("PrintNewLine" (spp-arg-list nil 1362 . 1364) . ((symbol "puts" 1368 . 1372) (semantic-list "(\"\")" 1372 . 1376)))
+          ("RMT_RAW" . ((number "2" 2486 . 2487)))
+          ("TOY_VAR" (spp-arg-list ("__type" "__var") 421 . 436) . 
+              ((symbol "__type" 440 . 446) (symbol "__var" 447 . 452) (punctuation "=" 453 . 454) (symbol "NULL" 455 . 459) (punctuation ";" 459 . 460) (symbol "llvm_gcroot" 464 . 475) (semantic-list "(__var, 0)" 475 . 485)))
+          ("RAS_MAGIC" . ((number "0x59a66a95" 1944 . 1954)))
+          ("nyi_fatal" (spp-arg-list nil 1133 . 1135) . ((symbol "toyfatal" 1139 . 1147) (semantic-list "(\"not yet implemented\")" 1147 . 1170)))
+          ("RT_OLD" . ((number "0" 2002 . 2003)))
+          ("RT_BYTE_ENCODED" . ((number "2" 2138 . 2139)))
+          ("RMT_NONE" . ((number "0" 2539 . 2540)))
+          )
+
+    )
+   (semanticdb-table "Pixel.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("_PIXEL_H_" variable (:constant-flag t) nil [375 384])
+            ("ToyRoot.h" include nil nil [386 406])
+            ("util.h" include nil nil [407 424])
+            ("Toy" type
+               (:members 
+                  ( ("ToyRoot" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [443 457])
+                    ("Pixel" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [486 493])
+                            ("y" variable (:type "double") (reparse-symbol classsubparts) [496 508])
+                            ("x" variable (:type "double") (reparse-symbol classsubparts) [496 508]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [460 512])
+                    ("MandelPix" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [545 552])
+                            ("doNew" function
+                               (:prototype-flag t
+                                :pointer 1
+                                :typemodifiers ("static")
+                                :arguments 
+                                  ( ("x" variable (:type "double") (reparse-symbol arg-sub-list) [580 589])
+                                    ("y" variable (:type "double") (reparse-symbol arg-sub-list) [590 599]))                                  
+                                :type ("MandelPix" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [556 600]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [515 636])
+                    ("Picture" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [667 674])
+                            ("size" variable (:type "int") (reparse-symbol classsubparts) [678 687])
+                            ("buf" variable
+                               (:pointer 1
+                                :type ("MandelPix" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [691 706])
+                            ("computed" variable (:type "bool") (reparse-symbol classsubparts) [710 724])
+                            ("yScale" variable (:type "double") (reparse-symbol classsubparts) [729 775])
+                            ("xScale" variable (:type "double") (reparse-symbol classsubparts) [729 775])
+                            ("yMax" variable (:type "double") (reparse-symbol classsubparts) [729 775])
+                            ("yMin" variable (:type "double") (reparse-symbol classsubparts) [729 775])
+                            ("xMax" variable (:type "double") (reparse-symbol classsubparts) [729 775])
+                            ("xMin" variable (:type "double") (reparse-symbol classsubparts) [729 775])
+                            ("height" variable (:type "int") (reparse-symbol classsubparts) [779 797])
+                            ("width" variable (:type "int") (reparse-symbol classsubparts) [779 797])
+                            ("data" variable
+                               (:dereference 1
+                                :type "unsigned char")
+                                (reparse-symbol classsubparts) [883 905])
+                            ("doNew" function
+                               (:prototype-flag t
+                                :pointer 1
+                                :typemodifiers ("static")
+                                :arguments 
+                                  ( ("xMin" variable (:type "double") (reparse-symbol arg-sub-list) [932 944])
+                                    ("xMax" variable (:type "double") (reparse-symbol arg-sub-list) [945 957])
+                                    ("yMin" variable (:type "double") (reparse-symbol arg-sub-list) [958 970])
+                                    ("yMax" variable (:type "double") (reparse-symbol arg-sub-list) [971 983])
+                                    ("width" variable (:type "int") (reparse-symbol arg-sub-list) [984 994])
+                                    ("height" variable (:type "int") (reparse-symbol arg-sub-list) [995 1006]))                                  
+                                :type ("Picture" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [910 1007]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [639 1043])
+                    ("jitCompute" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("p" variable
+                               (:pointer 1
+                                :type ("Picture" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1072 1083]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [1057 1084]))                  
+                :type "namespace")
+                nil [426 1086]))          
+    :file "Pixel.h"
+    :pointmax 1094
+    :fsize 1094
+    :lastmodtime '(20578 12879 0 0)
+    :unmatched-syntax '((string 1053 . 1056) (EXTERN 1046 . 1052))
+    :lexical-table 
+        '(("_PIXEL_H_")
+          )
+
+    )
+   (semanticdb-table "FunctionInliner.cc"
+    :major-mode 'c++-mode
+    :tags nil
+    :file "FunctionInliner.cc"
+    :pointmax 2545
+    :fsize 2624
+    :lastmodtime '(21278 24087 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "ToyCompiler.h"
+    :major-mode 'c++-mode
+    :tags nil
+    :file "ToyCompiler.h"
+    :pointmax 1399
+    :fsize 1377
+    :lastmodtime '(21278 24132 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "ToyJITCompiler.cc"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("llvm/IR/Constants.h" include nil nil [470 500])
+            ("llvm/IR/DerivedTypes.h" include nil nil [501 534])
+            ("llvm/IR/Function.h" include nil nil [535 564])
+            ("llvm/IR/Instructions.h" include nil nil [565 598])
+            ("llvm/IR/LLVMContext.h" include nil nil [599 631])
+            ("llvm/IR/Module.h" include nil nil [632 659])
+            ("llvm/DebugInfo.h" include nil nil [660 687])
+            ("llvm/CodeGen/GCStrategy.h" include nil nil [688 724])
+            ("llvm/CodeGen/JITCodeEmitter.h" include nil nil [725 765])
+            ("llvm/CodeGen/MachineFunction.h" include nil nil [766 807])
+            ("llvm/ExecutionEngine/ExecutionEngine.h" include nil nil [808 857])
+            ("llvm/Support/CommandLine.h" include nil nil [858 895])
+            ("llvm/Support/ManagedStatic.h" include nil nil [896 935])
+            ("llvm/Support/Debug.h" include nil nil [936 967])
+            ("llvm/Support/raw_ostream.h" include nil nil [968 1005])
+            ("llvm/IR/DataLayout.h" include nil nil [1006 1037])
+            ("llvm/LinkAllPasses.h" include (:system-flag t) nil [1038 1069])
+            ("VmkitGC.h" include nil nil [1071 1091])
+            ("vmkit/VirtualMachine.h" include nil nil [1092 1125])
+            ("vmkit/JIT.h" include nil nil [1126 1148])
+            ("ToyVM.h" include nil nil [1149 1167])
+            ("ToyThread.h" include nil nil [1168 1190])
+            ("ToyJITCompiler.h" include nil nil [1192 1219])
+            ("Toy" using (:type ("Toy" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1222 1242])
+            ("llvm" using (:type ("llvm" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1243 1264])
+            ("NotifyFunctionEmitted" function
+               (:parent "ToyJITListener"
+                :arguments 
+                  ( ("F" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Function" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1309 1327])
+                    ("Code" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [1328 1339])
+                    ("Size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1340 1352])
+                    ("Details" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("EmittedFunctionDetails" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1375 1413]))                  
+                :type "void")
+                nil [1266 1475])
+            ("ToyJITCompiler" function
+               (:constructor-flag t
+                :parent "ToyJITCompiler"
+                :type ("ToyJITCompiler" type (:type "class") nil nil))
+                nil [1478 3008])
+            ("ToyJITCompiler" function
+               (:destructor-flag t
+                :parent "ToyJITCompiler"
+                :type "void")
+                nil [3856 3975])
+            ("create" function
+               (:pointer 1
+                :parent "ToyJITCompiler"
+                :type ("ToyJITCompiler" type (:type "class") nil nil))
+                nil [3979 4053])
+            ("jitCompile" function
+               (:pointer 1
+                :parent "ToyJITCompiler"
+                :type "void")
+                nil [4057 4612]))          
+    :file "ToyJITCompiler.cc"
+    :pointmax 6899
+    :fsize 6910
+    :lastmodtime '(21278 24115 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "ToyCompiler.cc"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("llvm/IR/LLVMContext.h" include (:system-flag t) nil [469 501])
+            ("llvm/IR/Module.h" include (:system-flag t) nil [502 529])
+            ("llvm/IR/DerivedTypes.h" include (:system-flag t) nil [530 563])
+            ("llvm/ADT/OwningPtr.h" include (:system-flag t) nil [565 596])
+            ("llvm/Support/MemoryBuffer.h" include (:system-flag t) nil [598 636])
+            ("llvm/Support/system_error.h" include (:system-flag t) nil [637 675])
+            ("llvm/Support/TargetSelect.h" include (:system-flag t) nil [676 714])
+            ("llvm/IR/IRBuilder.h" include (:system-flag t) nil [715 745])
+            ("llvm/Bitcode/ReaderWriter.h" include (:system-flag t) nil [747 785])
+            ("llvm/Analysis/Verifier.h" include (:system-flag t) nil [787 822])
+            ("llvm/DIBuilder.h" include (:system-flag t) nil [823 850])
+            ("llvm/IR/DataLayout.h" include (:system-flag t) nil [851 882])
+            ("util.h" include nil nil [884 901])
+            ("ToyVM.h" include nil nil [902 920])
+            ("ToyCompiler.h" include nil nil [921 945])
+            ("Toy" using (:type ("Toy" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [947 967])
+            ("llvm" using (:type ("llvm" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [968 989])
+            ("ToyCompiler" function
+               (:constructor-flag t
+                :parent "ToyCompiler"
+                :type ("ToyCompiler" type (:type "class") nil nil))
+                nil [991 1100])
+            ("ToyCompiler" function
+               (:destructor-flag t
+                :parent "ToyCompiler"
+                :type "void")
+                nil [1102 1132])
+            ("loadSelfModule" function
+               (:pointer 1
+                :parent "ToyCompiler"
+                :type ("llvm::Module" type (:type "class") nil nil))
+                nil [1134 1657])
+            ("generateCode" function
+               (:parent "ToyCompiler"
+                :arguments 
+                  ( ("func" variable
+                       (:pointer 1
+                        :type ("llvm::Function" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1940 1961]))                  
+                :type "void")
+                nil [1909 2671])
+            ("llvmFunction" function
+               (:pointer 1
+                :parent "ToyCompiler"
+                :type ("llvm::Function" type (:type "class") nil nil))
+                nil [3171 3404]))          
+    :file "ToyCompiler.cc"
+    :pointmax 3405
+    :fsize 3425
+    :lastmodtime '(21278 24126 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "ToyThread.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("_EVALUATOR_H_" variable (:constant-flag t) nil [380 393])
+            ("MutatorThread.h" include nil nil [395 421])
+            ("vmkit/System.h" include nil nil [422 447])
+            ("vmkit/Locks.h" include nil nil [448 472])
+            ("Toy" type
+               (:members 
+                  ( ("ToyVM" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [491 503])
+                    ("ToyThread" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [536 543])
+                            ("ToyThread" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("vm" variable
+                                       (:pointer 1
+                                        :type ("ToyVM" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [556 566]))                                  
+                                :type ("ToyThread" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [546 567])
+                            ("vm" function
+                               (:prototype-flag t
+                                :pointer 1
+                                :type ("ToyVM" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [570 582])
+                            ("execute" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [585 600]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [506 604]))                  
+                :type "namespace")
+                nil [474 606]))          
+    :file "ToyThread.h"
+    :pointmax 615
+    :fsize 614
+    :lastmodtime '(20578 46809 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("_EVALUATOR_H_")
+          )
+
+    )
+   (semanticdb-table "ToyJITCompiler.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("_RJITCOMPILER_H_" variable (:constant-flag t) nil [501 517])
+            ("llvm/CodeGen/GCMetadata.h" include nil nil [519 555])
+            ("llvm/ExecutionEngine/ExecutionEngine.h" include nil nil [556 605])
+            ("llvm/ExecutionEngine/JITEventListener.h" include nil nil [606 656])
+            ("llvm/GVMaterializer.h" include nil nil [657 689])
+            ("ToyCompiler.h" include nil nil [690 714])
+            ("ToyIntrinsics.h" include nil nil [715 741])
+            ("Toy" type
+               (:members 
+                  ( ("ToyJITCompiler" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [760 781])
+                    ("ToyJITListener" type
+                       (:superclasses 
+                          ( ("llvm::JITEventListener" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("TheCompiler" variable
+                               (:pointer 1
+                                :type ("ToyJITCompiler" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [921 949])
+                            ("public" label nil (reparse-symbol classsubparts) [950 957])
+                            ("ToyJITListener" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("Compiler" variable
+                                       (:pointer 1
+                                        :type ("ToyJITCompiler" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [975 1000]))                                  
+                                :type ("ToyJITListener" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [960 1034])
+                            ("NotifyFunctionEmitted" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("F" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("llvm::Function" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1080 1104])
+                                    ("Code" variable
+                                       (:pointer 1
+                                        :type "void")
+                                        (reparse-symbol arg-sub-list) [1111 1122])
+                                    ("Size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1129 1141])
+                                    ("Details" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("llvm::JITEventListener::EmittedFunctionDetails" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1148 1210]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [1038 1211]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [864 1214])
+                    ("ToyJITCompiler" type
+                       (:superclasses 
+                          ( ("ToyCompiler" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [1421 1428])
+                            ("listener" variable (:type ("ToyJITListener" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1432 1456])
+                            ("ee" variable
+                               (:pointer 1
+                                :type ("llvm::ExecutionEngine" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1459 1485])
+                            ("ToyJITCompiler" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :type ("ToyJITCompiler" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1489 1506])
+                            ("ToyJITCompiler" function
+                               (:prototype-flag t
+                                :destructor-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [1509 1527])
+                            ("create" function
+                               (:prototype-flag t
+                                :pointer 1
+                                :typemodifiers ("static")
+                                :type ("ToyJITCompiler" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1580 1612])
+                            ("jitCompile" function
+                               (:prototype-flag t
+                                :pointer 1
+                                :type "void")
+                                (reparse-symbol classsubparts) [1615 1634]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1367 1637]))                  
+                :type "namespace")
+                nil [743 1641]))          
+    :file "ToyJITCompiler.h"
+    :pointmax 1669
+    :fsize 1676
+    :lastmodtime '(20577 54949 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("_RJITCOMPILER_H_")
+          )
+
+    )
+   (semanticdb-table "ToyIntrinsics.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("_RINTRINSICS_H_" variable (:constant-flag t) nil [499 514])
+            ("llvm/IR/LLVMContext.h" include (:system-flag t) nil [516 548])
+            ("llvm/IR/Module.h" include (:system-flag t) nil [549 576])
+            ("llvm/IR/DerivedTypes.h" include (:system-flag t) nil [577 610])
+            ("vmkit/JIT.h" include nil nil [611 633])
+            ("util.h" include nil nil [634 651])
+            ("Toy" type
+               (:members 
+                  ( ("ToyIntrinsics" type
+                       (:superclasses 
+                          ( ("vmkit::BaseIntrinsics" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [725 732])
+                            ("toyFunctionType" variable
+                               (:pointer 1
+                                :type ("llvm::FunctionType" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [736 779])
+                            ("typePicture" variable
+                               (:pointer 1
+                                :type ("llvm::Type" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [783 822])
+                            ("typepPicture" variable
+                               (:pointer 1
+                                :type ("llvm::Type" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [825 865])
+                            ("typeInt64" variable
+                               (:pointer 1
+                                :type ("llvm::Type" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [869 906])
+                            ("init" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("M" variable
+                                       (:pointer 1
+                                        :type ("llvm::Module" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [921 937]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [911 938])
+                            ("loadCommonTypes" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("selfModule" variable
+                                       (:pointer 1
+                                        :type ("llvm::Module" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [963 988]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [942 989]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [671 993]))                  
+                :type "namespace")
+                nil [653 996]))          
+    :file "ToyIntrinsics.h"
+    :pointmax 1005
+    :fsize 1004
+    :lastmodtime '(20973 10318 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("_RINTRINSICS_H_")
+          )
+
+    )
+   (semanticdb-table "ToyThread.cc"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("util.h" include nil nil [350 367])
+            ("ToyThread.h" include nil nil [368 390])
+            ("ToyVM.h" include nil nil [391 409])
+            ("ToyCompiler.h" include nil nil [410 434])
+            ("ToyJITCompiler.h" include nil nil [435 462])
+            ("Pixel.h" include nil nil [463 481])
+            ("Toy" using (:type ("Toy" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [483 503])
+            ("jitPtr" variable
+               (:functionpointer-flag t
+                :type "int")
+                nil [513 537])
+            ("execute" function
+               (:parent "ToyThread"
+                :type "void")
+                nil [689 1168]))          
+    :file "ToyThread.cc"
+    :pointmax 1169
+    :fsize 1176
+    :lastmodtime '(21278 24195 0 0)
+    :unmatched-syntax '((TYPEDEF 505 . 512))
+    )
+   (semanticdb-table "ToyRoot.h"
+    :file "ToyRoot.h"
+    :fsize 1961
+    :lastmodtime '(20973 10629 0 0)
+    )
+   (semanticdb-table "ToyIntrinsics.cc"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("ToyIntrinsics.h" include nil nil [223 249])
+            ("Toy" using (:type ("Toy" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [251 271])
+            ("init" function
+               (:parent "ToyIntrinsics"
+                :arguments 
+                  ( ("M" variable
+                       (:pointer 1
+                        :type ("llvm::Module" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [298 314]))                  
+                :type "void")
+                nil [273 365])
+            ("loadCommonTypes" function
+               (:parent "ToyIntrinsics"
+                :arguments 
+                  ( ("selfModule" variable
+                       (:pointer 1
+                        :type ("llvm::Module" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [403 428]))                  
+                :type "void")
+                nil [367 911]))          
+    :file "ToyIntrinsics.cc"
+    :pointmax 912
+    :fsize 911
+    :lastmodtime '(20561 62929 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!Users!adrian!Downloads!VMKit_tutorial!toy-vm!lib!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

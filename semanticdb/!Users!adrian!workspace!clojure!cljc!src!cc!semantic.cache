@@ -1,0 +1,196 @@
+;; Object cc/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "cc/"
+  :tables
+  (list
+    (semanticdb-table "main.cc"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("string" include (:system-flag t) nil [21 38])
+            ("vector" include (:system-flag t) nil [39 56])
+            ("ExprAST" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [74 81])
+                    ("ExprAST" function
+                       (:destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [84 106]))                  
+                :type "class")
+                nil [58 109])
+            ("NumberExprAST" type
+               (:superclasses 
+                  ( ("ExprAST" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("Val" variable (:type "double") (reparse-symbol classsubparts) [152 163])
+                    ("public" label nil (reparse-symbol classsubparts) [164 171])
+                    ("NumberExprAST" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("val" variable (:type "double") (reparse-symbol arg-sub-list) [189 200]))                          
+                        :type ("NumberExprAST" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [174 215]))                  
+                :type "class")
+                nil [111 218])
+            ("VariableExprAST" type
+               (:superclasses 
+                  ( ("ExprAST" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("Name" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [263 280])
+                    ("public" label nil (reparse-symbol classsubparts) [281 288])
+                    ("VariableExprAST" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("name" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [308 332]))                          
+                        :type ("VariableExprAST" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [291 349]))                  
+                :type "class")
+                nil [220 352])
+            ("BinaryExprAST" type
+               (:superclasses 
+                  ( ("ExprAST" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("Op" variable (:type "char") (reparse-symbol classsubparts) [395 403])
+                    ("LHS" variable
+                       (:pointer 1
+                        :type ("ExprAST" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [406 425])
+                    ("RHS" variable
+                       (:pointer 1
+                        :type ("ExprAST" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [406 425])
+                    ("public" label nil (reparse-symbol classsubparts) [426 433])
+                    ("BinaryExprAST" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("op" variable (:type "char") (reparse-symbol arg-sub-list) [451 459])
+                            ("lhs" variable
+                               (:pointer 1
+                                :type ("ExprAST" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [460 473])
+                            ("rhs" variable
+                               (:pointer 1
+                                :type ("ExprAST" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [474 487]))                          
+                        :type ("BinaryExprAST" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [436 526]))                  
+                :type "class")
+                nil [354 529])
+            ("CallExprAST" type
+               (:superclasses 
+                  ( ("ExprAST" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("Callee" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [570 589])
+                    ("Args" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("ExprAST" type (:pointer 1) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [592 619])
+                    ("public" label nil (reparse-symbol classsubparts) [620 627])
+                    ("CallExprAST" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("callee" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [643 669])
+                            ("args" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("ExprAST" type (:pointer 1) nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [670 698]))                          
+                        :type ("CallExprAST" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [630 736]))                  
+                :type "class")
+                nil [531 739])
+            ("Token" type
+               (:members 
+                  ( ("T_EOF" variable
+                       (:constant-flag t
+                        :default-value (764 766)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [756 766])
+                    ("T_DEF" variable
+                       (:constant-flag t
+                        :default-value (778 780)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [770 780])
+                    ("T_EXTERN" variable
+                       (:constant-flag t
+                        :default-value (795 797)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [784 797])
+                    ("T_IDENTIFIER" variable
+                       (:constant-flag t
+                        :default-value (816 818)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [801 818])
+                    ("T_NUMBER" variable
+                       (:constant-flag t
+                        :default-value (833 834)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [822 834]))                  
+                :type "enum")
+                nil [741 837])
+            ("TBox" type
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "class"
+                :members 
+                  ( ("val" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol classsubparts) [875 881]))                  )
+                nil [839 884])
+            ("Var" type (:type "class") nil [886 899])
+            ("Symbol" type (:type "class") nil [901 917])
+            ("Keyword" type (:type "class") nil [919 936])
+            ("Compiler" type
+               (:members 
+                  ( ("IdentifierStr" variable
+                       (:typemodifiers ("static")
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [957 990])
+                    ("NumVal" variable
+                       (:typemodifiers ("static")
+                        :type "double")
+                        (reparse-symbol classsubparts) [993 1014]))                  
+                :type "class")
+                nil [938 1017])
+            ("LispReader" type (:type "class") nil [1019 1039])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1050 1059])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1060 1073]))                  
+                :type "int")
+                nil [1041 1134]))          
+      :file "main.cc"
+      :pointmax 1135
+      :fsize 1134
+      :lastmodtime '(21282 16783 0 0)
+      :unmatched-syntax '((INT 1136 . 1139) (symbol 1136 . 1138) (symbol 1135 . 1136))))
+  :file "!Users!adrian!workspace!clojure!cljc!src!cc!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

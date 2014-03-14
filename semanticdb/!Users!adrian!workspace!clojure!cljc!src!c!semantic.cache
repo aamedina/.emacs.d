@@ -1,0 +1,31 @@
+;; Object c/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "c/"
+  :tables (list 
+   (semanticdb-table "main.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("stdlib.h" include (:system-flag t) nil [20 39])
+            ("llvm-c/Core.h" include nil nil [40 64])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [75 84])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [85 98]))                  
+                :type "int")
+                nil [66 143]))          
+    :file "main.c"
+    :pointmax 132
+    :fsize 143
+    :lastmodtime '(21282 3679 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!Users!adrian!workspace!clojure!cljc!src!c!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

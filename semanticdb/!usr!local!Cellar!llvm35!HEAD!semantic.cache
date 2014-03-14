@@ -1,0 +1,18 @@
+;; Object HEAD/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "HEAD/"
+  :tables (list 
+   (semanticdb-table "INSTALL_RECEIPT.json"
+    :major-mode 'js-mode
+    :tags nil
+    :file "INSTALL_RECEIPT.json"
+    :pointmax 393
+    :fsize 391
+    :lastmodtime '(21279 39214 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!usr!local!Cellar!llvm35!HEAD!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )
